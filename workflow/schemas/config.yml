@@ -1,0 +1,77 @@
+$schema: "http://json-schema.org/draft-06/schema#"
+
+description: the parameters for the molecular clock analysis workflow
+
+properties:
+
+  # input
+  fas:
+    type: string
+    description: the FASTA file of DNA sequences
+  tsv:
+    type: string
+    description: the tab-separated values file of sequence metadata
+  tag:
+    type: string
+    description: the experiment identification tag
+
+  # IQ-TREE
+  alrt:
+    type: integer
+    description: the number of replicates for SH approximate likelihood ratio test
+    default: 1000
+  bb:
+    type: integer
+    description: the number of replicates for ultrafast bootstrap (>=1000)
+    default: 1000
+
+  # Gubbins
+  itr:
+    type: integer
+    description: the maximum number of iterations
+    default: 10
+  gap:
+    type: integer
+    description: the value to filter out taxa with more than this percentage of gaps
+    default: 25
+
+  # beautify/BEAST
+  clock:
+    type: array
+    description: the clock models to use (rex [= relaxed exponential], rln [= relaxed lognormal], or str [= strict])
+    default:
+      - rex
+      - rln
+      - str
+  coal:
+    type: array
+    description: the coalescent models to use (con [= constant] or exp [= exponential])
+    default:
+      - con
+      - exp
+  mcmc_len:
+    type: integer
+    description: the chain length for MCMC
+    default: 100000000
+  mcmc_echo:
+    type: integer
+    description: the sampling frequency for MCMC
+    default: 100000
+  mle_len:
+    type: integer
+    description: the chain length for PS/SS MLE
+    default: 10000000
+  mle_echo:
+    type: integer
+    description: the sampling frequency for PS/SS MLE
+    default: 10000
+  mle_step:
+    type: integer
+    description: the number of path steps for PS/SS MLE
+    default: 100
+
+  # threads
+  threads:
+    type: integer
+    description: the number of threads to use for parallel tasks
+    default: 32

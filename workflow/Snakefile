@@ -1,0 +1,127 @@
+from pathlib import Path
+
+from snakemake.io import expand
+from snakemake.utils import validate
+
+
+## configuration ##
+
+validate(config, "schemas/config.yml")
+
+## variables ##
+
+root = Path("results") / config["tag"]
+
+## rules ##
+
+rule all:
+  input:
+    expand(root / "{clock}-{coal}.trees", clock=config["clock"], coal=config["coal"])
+
+rule header:
+  message: "Generate sed script to normalize headers."
+  input: config["tsv"]
+  output: root / "header.sed"
+  shell:
+    """
+    awk \
+      -F "\t" -v OFS="\t" \
+      'NR > 1 && $2 != "?" {{ printf "s/>%s/>%s_%s_%s/\\n", $1, $1, $2, $3; }}' \
+      {input:q} > {output:q}
+    """
+
+rule mafft:
+  message: "Perform multiple sequence alignment using MAFFT."
+  input:
+    fas = config["fas"],
+    sed = rules.header.output
+  output: root / "msa.fasta"
+  log: root / "msa.log"
+  threads: config["threads"]
+  shell:
+    """
+    mafft --auto --thread {threads} {input.fas:q} 2> {log:q} | \
+      # convert ambiguous bases and non-gap characters to N
+      # normalize headers to >accession.version_date_country
+      sed -E -e '/^>/ s/ .*//g' -e '/^[^>]/ s/[^ACGTNacgtn-]/n/g' -f {input.sed:q} > {output:q}
+    """
+
+rule iqtree:
+  message: "Infer maximum-likelihood tree and model of sequence evolution."
+  input: rules.mafft.output
+  output:
+    tre = root / "iqt.treefile",
+    log = root / "iqt.log"
+  params:
+    pre = root / "iqt",
+    alrt = config["alrt"],
+    bb = config["bb"]
+  threads: config["threads"]
+  shell:
+    """
+    iqtree \
+      -s {input:q} -pre {params.pre} -alrt {params.alrt} -bb {params.bb} -bnni \
+      -nt AUTO -redo > /dev/null 2> {output.log:q}
+    """
+
+rule gubbins:
+  message: "Infer maximum-likelihood tree and recombination events."
+  input:
+    msa = rules.mafft.output,
+    tre =rules.iqtree.output.tre
+  output:
+    tree = root / "gub.final_tree.tre",
+    reco = root / "gub.recombination_predictions.gff"
+  params:
+    pwd = Path().absolute(),
+    root = lambda wildcards, output: Path(output[0]).parent,
+    itr = config["itr"],
+    gap = config["gap"]
+  threads: config["threads"]
+  shell:
+    """
+    mkdir -p {params.root:q} && cd {params.root:q} || exit
+    run_gubbins.py \
+      {params.pwd:q}/{input.msa:q} \
+      -s {params.pwd:q}/{input.tre:q} -i {params.itr} -f {params.gap} \
+      -p gub -c {threads} > gub.log
+    """
+
+rule beautify:
+  message: "Generate BEAST XML input files: {params.clock}-{params.coal}."
+  input:
+    fas = rules.mafft.output,
+    log = rules.iqtree.output.log
+  output:
+    xml = root / "{clock}-{coal}.xml"
+  params:
+    mcmc_len = config["mcmc_len"],
+    mcmc_echo = config["mcmc_echo"],
+    mle_len = config["mle_len"],
+    mle_echo = config["mle_echo"],
+    mle_step = config["mle_step"],
+    stem = lambda wildcards, output: Path(output[0]).stem,
+    clock = lambda wildcards, output: Path(output[0]).stem.split("-")[0],
+    coal = lambda wildcards, output: Path(output[0]).stem.split("-")[1]
+  script: "scripts/beautify/beautify.py"
+
+rule beast:
+  message:
+    """
+    Infer chronogram using BEAST: {params.clock}-{params.coal}.
+    """
+  input: rules.beautify.output.xml
+  output: root / "{clock}-{coal}.trees"
+  log: root / "{clock}-{coal}.log"
+  params:
+    pwd = Path().absolute(),
+    root = root / "beast",
+    clock = lambda wildcards, output: Path(output[0]).stem.split("-")[0],
+    coal = lambda wildcards, output: Path(output[0]).stem.split("-")[1]
+  threads: config["threads"]
+  shell:
+    """
+    mkdir -p {params.root:q}
+    cd {params.root:q} || exit
+    beast -threads {threads} {params.pwd:q}/{input:q} > {params.pwd:q}/{log:q}
+    """

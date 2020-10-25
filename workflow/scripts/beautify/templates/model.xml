@@ -1,0 +1,1387 @@
+<!-- https://beast.community/custom_substitution_models -->
+<!-- A general time reversible model for DNA.                                          -->
+<!-- This element must have parameters for exactly five of the six rates               -->
+<!-- The sixth rate has an implied value of 1.0 and all other rates are relative to it -->
+<!-- 
+This example parameterizes the rate matrix relative to the A<->G transition      
+<gtrModel id="gtr1">
+	<frequencies> <frequencyModel idref="freqs"/> </frequencies>
+	<rateAC> <parameter id="rateAC" value="1.0"/> </rateAC>
+	<rateAT> <parameter id="rateAT" value="1.0"/> </rateAT>
+	<rateCG> <parameter id="rateCG" value="1.0"/> </rateCG>
+	<rateCT> <parameter id="rateCT" value="1.0"/> </rateCT>
+	<rateGT> <parameter id="rateGT" value="1.0"/> </rateGT>
+</gtrModel>
+                                                                                       -->
+<models>
+    <model id="JC">
+        <!-- The JC69 substitution model (Jukes & Cantor, 1969) -->
+        <subModel>
+            <gtrModel id="submodel">
+            <frequencies>
+                <frequencyModel dataType="nucleotide">
+                    <frequencies>
+                        <parameter id="submodel.freq" value="0.25 0.25 0.25 0.25"/>
+                    </frequencies>
+                </frequencyModel>
+            </frequencies>
+            <rateAC>
+                <parameter id="submodel.ac" value="1.0"/>
+            </rateAC>
+            <rateAG>
+                <parameter id="submodel.ag" value="1.0"/>
+            </rateAG>
+            <rateAT>
+                <parameter id="submodel.at" value="1.0"/>
+            </rateAT>
+            <rateCG>
+                <parameter id="submodel.cg" value="1.0"/>
+            </rateCG>
+            <rateGT>
+                <parameter id="submodel.gt" value="1.0"/>
+            </rateGT>
+        </gtrModel>
+        </subModel>
+        <siteModel id="sitemodel">
+            <substitutionModel>
+                <gtrModel idref="submodel"/>
+            </substitutionModel>
+            <relativeRate>
+                <parameter id="sitemodel.mu" value="1.0" lower="0.0"/>
+            </relativeRate>
+        </siteModel>
+    </model>
+    <model id="F81">
+        <!-- The F81 substitution model (Felsenstein, 1981) -->
+        <subModel>
+            <gtrModel id="submodel">
+                <frequencies>
+                    <frequencyModel dataType="nucleotide">
+                        <frequencies>
+                            <parameter id="submodel.freq" value="0.25 0.25 0.25 0.25"/>
+                        </frequencies>
+                    </frequencyModel>
+                </frequencies>
+                <rateAC>
+                    <parameter id="submodel.ac" value="1.0"/>
+                </rateAC>
+                <rateAG>
+                    <parameter id="submodel.ag" value="1.0"/>
+                </rateAG>
+                <rateAT>
+                    <parameter id="submodel.at" value="1.0"/>
+                </rateAT>
+                <rateCG>
+                    <parameter id="submodel.cg" value="1.0"/>
+                </rateCG>
+                <rateGT>
+                    <parameter id="submodel.gt" value="1.0"/>
+                </rateGT>
+            </gtrModel>
+        </subModel>
+        <siteModel id="sitemodel">
+            <substitutionModel>
+                <gtrModel idref="submodel"/>
+            </substitutionModel>
+            <relativeRate>
+                <parameter id="sitemodel.mu" value="1.0" lower="0.0"/>
+            </relativeRate>
+        </siteModel>
+        <operators id="operators" optimizationSchedule="default">
+            <deltaExchange delta="0.01" weight="0.1">
+                <parameter idref="submodel.freq"/>
+            </deltaExchange>
+        </operators>
+        <prior id="prior">
+            <uniformPrior lower="0.0" upper="1.0">
+                <parameter idref="submodel.freq"/>
+            </uniformPrior>
+        </prior>
+        <log>
+            <parameter idref="submodel.freq"/>
+        </log>
+    </model>
+    <model id="K2P">
+        <!-- The K80 substitution model (Kimura, 1980) -->
+        <subModel>
+            <hkyModel id="submodel">
+                <frequencies>
+                    <frequencyModel dataType="nucleotide">
+                        <frequencies>
+                            <parameter id="submodel.freq" value="0.25 0.25 0.25 0.25"/>
+                        </frequencies>
+                    </frequencyModel>
+                </frequencies>
+                <kappa>
+                    <parameter id="submodel.kappa" value="1.0" lower="0.0"/>
+                </kappa>
+            </hkyModel>
+        </subModel>
+        <siteModel id="sitemodel">
+            <substitutionModel>
+                <hkyModel idref="submodel"/>
+            </substitutionModel>
+            <relativeRate>
+                <parameter id="sitemodel.mu" value="1.0" lower="0.0"/>
+            </relativeRate>
+        </siteModel>
+        <operators id="operators" optimizationSchedule="default">
+            <scaleOperator scaleFactor="0.75" weight="0.1">
+                <parameter idref="submodel.kappa"/>
+            </scaleOperator>
+        </operators>
+        <prior id="prior">
+            <logNormalPrior mean="1.0" stdev="1.25" offset="0.0" meanInRealSpace="false">
+                <parameter idref="submodel.kappa"/>
+            </logNormalPrior>
+        </prior>
+        <log>
+            <parameter idref="submodel.kappa"/>
+            <parameter idref="submodel.freq"/>
+        </log>
+    </model>
+    <model id="HKY">
+        <!-- The HKY substitution model (Hasegawa, Kishino & Yano, 1985) -->
+        <subModel>
+            <hkyModel id="submodel">
+                <frequencies>
+                    <frequencyModel dataType="nucleotide">
+                        <frequencies>
+                            <parameter id="submodel.freq" value="0.25 0.25 0.25 0.25"/>
+                        </frequencies>
+                    </frequencyModel>
+                </frequencies>
+                <kappa>
+                    <parameter id="submodel.kappa" value="1.0" lower="0.0"/>
+                </kappa>
+            </hkyModel>
+        </subModel>
+        <siteModel id="sitemodel">
+            <substitutionModel>
+                <hkyModel idref="submodel"/>
+            </substitutionModel>
+            <relativeRate>
+                <parameter id="sitemodel.mu" value="1.0" lower="0.0"/>
+            </relativeRate>
+        </siteModel>
+        <operators id="operators" optimizationSchedule="default">
+            <scaleOperator scaleFactor="0.75" weight="0.1">
+                <parameter idref="submodel.kappa"/>
+            </scaleOperator>
+            <deltaExchange delta="0.01" weight="0.1">
+                <parameter idref="submodel.freq"/>
+            </deltaExchange>
+        </operators>
+        <prior id="prior">
+            <logNormalPrior mean="1.0" stdev="1.25" offset="0.0" meanInRealSpace="false">
+                <parameter idref="submodel.kappa"/>
+            </logNormalPrior>      
+            <uniformPrior lower="0.0" upper="1.0">
+                <parameter idref="submodel.freq"/>
+            </uniformPrior>
+        </prior>
+        <log>
+            <parameter idref="submodel.kappa"/>
+            <parameter idref="submodel.freq"/>
+        </log>
+    </model>
+	<model id="TN">
+		<!-- The TrN substitution model (Tamura & Nei, 1993)  -->
+		<subModel>
+			<gtrModel id="submodel">
+				<frequencies>
+					<frequencyModel dataType="nucleotide">
+						<frequencies>
+							<parameter id="submodel.freq" value="0.25 0.25 0.25 0.25"/>
+						</frequencies>
+					</frequencyModel>
+				</frequencies>
+				<rateAC>
+					<parameter id="submodel.trnv" value="1.0" lower="0.0"/>
+				</rateAC>
+				<rateAG>
+					<parameter id="submodel.ag" value="1.0" lower="0.0"/>
+				</rateAG>
+				<rateAT>
+					<parameter idref="submodel.trnv"/>
+				</rateAT>
+				<rateCG>
+					<parameter idref="submodel.trnv"/>
+				</rateCG>
+				<rateGT>
+					<parameter idref="submodel.trnv"/>
+				</rateGT>
+			</gtrModel>
+		</subModel>
+		<siteModel id="sitemodel">
+			<substitutionModel>
+				<gtrModel idref="submodel"/>
+			</substitutionModel>
+			<relativeRate>
+				<parameter id="sitemodel.mu" value="1.0" lower="0.0"/>
+			</relativeRate>
+		</siteModel>
+		<operators id="operators" optimizationSchedule="default">
+			<scaleOperator scaleFactor="0.75" weight="0.1">
+				<parameter idref="submodel.trnv"/>
+			</scaleOperator>
+			<scaleOperator scaleFactor="0.75" weight="0.1">
+				<parameter idref="submodel.ag"/>
+			</scaleOperator>
+			<deltaExchange delta="0.01" weight="1">
+				<parameter idref="submodel.freq"/>
+			</deltaExchange>
+			<scaleOperator scaleFactor="0.75" weight="0.1">
+			</scaleOperator>
+		</operators>
+		<prior id="prior">
+			<gammaPrior shape="0.05" scale="10.0" offset="0.0">
+				<parameter idref="submodel.trnv"/>
+			</gammaPrior>
+			<gammaPrior shape="0.05" scale="10.0" offset="0.0">
+				<parameter idref="submodel.ag"/>
+			</gammaPrior>
+			<uniformPrior lower="0.0" upper="1.0">
+				<parameter idref="submodel.freq"/>
+			</uniformPrior>
+		</prior>
+		<log>
+			<parameter idref="submodel.trnv"/>
+			<parameter idref="submodel.ag"/>
+			<parameter idref="submodel.freq"/>
+		</log>
+	</model>
+	<model id="TNe">
+        <!-- The TrNef substitution model (Tamura & Nei, 1993)  -->
+        <subModel>
+            <gtrModel id="submodel">
+                <frequencies>
+                    <frequencyModel dataType="nucleotide">
+                        <frequencies>
+                            <parameter id="submodel.freq" value="0.25 0.25 0.25 0.25"/>
+                        </frequencies>
+                    </frequencyModel>
+                </frequencies>
+                <rateAC>
+                    <parameter id="submodel.trnv" value="1.0" lower="0.0"/>
+                </rateAC>
+                <rateAG>
+                    <parameter id="submodel.ag" value="1.0" lower="0.0"/>
+                </rateAG>
+                <rateAT>
+                    <parameter idref="submodel.trnv"/>
+                </rateAT>
+                <rateCG>
+                    <parameter idref="submodel.trnv"/>
+                </rateCG>
+                <rateGT>
+                    <parameter idref="submodel.trnv"/>
+                </rateGT>
+            </gtrModel>
+        </subModel>
+        <siteModel id="sitemodel">
+            <substitutionModel>
+                <gtrModel idref="submodel"/>
+            </substitutionModel>
+            <relativeRate>
+                <parameter id="sitemodel.mu" value="1.0" lower="0.0"/>
+            </relativeRate>
+        </siteModel>
+        <operators id="operators" optimizationSchedule="default">
+            <scaleOperator scaleFactor="0.75" weight="0.1">
+                <parameter idref="submodel.trnv"/>
+            </scaleOperator>
+            <scaleOperator scaleFactor="0.75" weight="0.1">
+                <parameter idref="submodel.ag"/>
+            </scaleOperator>
+            <scaleOperator scaleFactor="0.75" weight="0.1">
+            </scaleOperator>
+        </operators>
+        <prior id="prior">
+            <gammaPrior shape="0.05" scale="10.0" offset="0.0">
+                <parameter idref="submodel.trnv"/>
+            </gammaPrior>
+            <gammaPrior shape="0.05" scale="10.0" offset="0.0">
+                <parameter idref="submodel.ag"/>
+            </gammaPrior>
+        </prior>
+        <log>
+            <parameter idref="submodel.trnv"/>
+            <parameter idref="submodel.ag"/>
+            <parameter idref="submodel.freq"/>
+        </log>
+    </model>
+    <model id="K3P">
+        <!-- The K3P "3-parameter" substitution model (Kimura, 1981) -->
+        <subModel>
+            <gtrModel id="submodel">
+                <frequencies>
+                    <frequencyModel dataType="nucleotide">
+                        <frequencies>
+                            <parameter id="submodel.freq" value="0.25 0.25 0.25 0.25"/>
+                        </frequencies>
+                    </frequencyModel>
+                </frequencies>
+                <rateAC>
+                    <parameter id="submodel.pur2pyr" value="1.0" lower="0.0"/>
+                </rateAC>
+                <rateAG>
+                    <parameter id="submodel.ag" value="1.0"/>
+                </rateAG>
+                <rateAT>
+                    <parameter id="submodel.pyr2pur" value="1.0" lower="0.0"/>
+                </rateAT>
+                <rateCG>
+                    <parameter idref="submodel.pyr2pur"/>
+                </rateCG>
+                <rateGT>
+                    <parameter idref="submodel.pur2pyr"/>
+                </rateGT>
+            </gtrModel>
+        </subModel>
+        <siteModel id="sitemodel">
+            <substitutionModel>
+                <gtrModel idref="submodel"/>
+            </substitutionModel>
+            <relativeRate>
+                <parameter id="sitemodel.mu" value="1.0" lower="0.0"/>
+            </relativeRate>
+        </siteModel>
+        <operators id="operators" optimizationSchedule="default">
+            <scaleOperator scaleFactor="0.75" weight="0.1">
+                <parameter idref="submodel.pur2pyr"/>
+            </scaleOperator>
+            <scaleOperator scaleFactor="0.75" weight="0.1">
+                <parameter idref="submodel.pyr2pur"/>
+            </scaleOperator>
+        </operators>
+        <prior id="prior">
+            <gammaPrior shape="0.05" scale="10.0" offset="0.0">
+                <parameter idref="submodel.pur2pyr"/>
+            </gammaPrior>
+            <gammaPrior shape="0.05" scale="10.0" offset="0.0">
+                <parameter idref="submodel.pyr2pur"/>
+            </gammaPrior>
+        </prior>
+        <log>
+            <parameter idref="submodel.pur2pyr"/>
+            <parameter idref="submodel.pyr2pur"/>
+            <parameter idref="submodel.freq"/>
+        </log>
+    </model>
+    <model id="K3Pu">
+        <!-- The K3Puf "3-parameter" substitution model (Kimura, 1981) -->
+        <subModel>
+            <gtrModel id="submodel">
+                <frequencies>
+                    <frequencyModel dataType="nucleotide">
+                        <frequencies>
+                            <parameter id="submodel.freq" value="0.25 0.25 0.25 0.25"/>
+                        </frequencies>
+                    </frequencyModel>
+                </frequencies>
+                <rateAC>
+                    <parameter id="submodel.pur2pyr" value="1.0" lower="0.0"/>
+                </rateAC>
+                <rateAG>
+                    <parameter id="submodel.ag" value="1.0"/>
+                </rateAG>
+                <rateAT>
+                    <parameter id="submodel.pyr2pur" value="1.0" lower="0.0"/>
+                </rateAT>
+                <rateCG>
+                    <parameter idref="submodel.pyr2pur"/>
+                </rateCG>
+                <rateGT>
+                    <parameter idref="submodel.pur2pyr"/>
+                </rateGT>
+            </gtrModel>
+        </subModel>
+        <siteModel id="sitemodel">
+            <substitutionModel>
+                <gtrModel idref="submodel"/>
+            </substitutionModel>
+            <relativeRate>
+                <parameter id="sitemodel.mu" value="1.0" lower="0.0"/>
+            </relativeRate>
+        </siteModel>
+        <operators id="operators" optimizationSchedule="default">
+            <scaleOperator scaleFactor="0.75" weight="0.1">
+                <parameter idref="submodel.pur2pyr"/>
+            </scaleOperator>
+            <scaleOperator scaleFactor="0.75" weight="0.1">
+                <parameter idref="submodel.pyr2pur"/>
+            </scaleOperator>
+            <deltaExchange delta="0.01" weight="0.1">
+                <parameter idref="submodel.freq"/>
+            </deltaExchange>
+        </operators>
+        <prior id="prior">
+            <gammaPrior shape="0.05" scale="10.0" offset="0.0">
+                <parameter idref="submodel.pur2pyr"/>
+            </gammaPrior>
+            <gammaPrior shape="0.05" scale="10.0" offset="0.0">
+                <parameter idref="submodel.pyr2pur"/>
+            </gammaPrior>
+            <uniformPrior lower="0.0" upper="1.0">
+                <parameter idref="submodel.freq"/>
+            </uniformPrior>
+        </prior>
+        <log>
+            <parameter idref="submodel.pur2pyr"/>
+            <parameter idref="submodel.pyr2pur"/>
+            <parameter idref="submodel.freq"/>
+        </log>
+    </model>
+	<model id="TIM">
+        <!-- The TIM (transitional) substitution model -->
+        <subModel>
+            <gtrModel id="submodel">
+                <frequencies>
+                    <frequencyModel dataType="nucleotide">
+                        <frequencies>
+                            <parameter id="submodel.freq" value="0.25 0.25 0.25 0.25"/>
+                        </frequencies>
+                    </frequencyModel>
+                </frequencies>
+                <rateAC>
+                    <parameter id="submodel.pur2pyr" value="1.0" lower="0.0"/>
+                </rateAC>
+                <rateAG>
+                    <parameter id="submodel.ag" value="1.0" lower="0.0"/>
+                </rateAG>
+                <rateAT>
+                    <parameter id="submodel.pyr2pur" value="1.0" lower="0.0"/>
+                </rateAT>
+                <rateCG>
+                    <parameter idref="submodel.pyr2pur"/>
+                </rateCG>
+                <rateGT>
+                    <parameter idref="submodel.pur2pyr"/>
+                </rateGT>
+            </gtrModel>
+        </subModel>
+        <siteModel id="sitemodel">
+            <substitutionModel>
+                <gtrModel idref="submodel"/>
+            </substitutionModel>
+            <relativeRate>
+                <parameter id="sitemodel.mu" value="1.0" lower="0.0"/>
+            </relativeRate>
+        </siteModel>
+        <operators id="operators" optimizationSchedule="default">
+            <scaleOperator scaleFactor="0.75" weight="0.1">
+                <parameter idref="submodel.pur2pyr"/>
+            </scaleOperator>
+            <scaleOperator scaleFactor="0.75" weight="0.1">
+                <parameter idref="submodel.ag"/>
+            </scaleOperator>
+            <scaleOperator scaleFactor="0.75" weight="0.1">
+                <parameter idref="submodel.pyr2pur"/>
+            </scaleOperator>
+            <deltaExchange delta="0.01" weight="0.1">
+                <parameter idref="submodel.freq"/>
+            </deltaExchange>
+        </operators>
+        <prior id="prior">
+            <gammaPrior shape="0.05" scale="10.0" offset="0.0">
+                <parameter idref="submodel.pur2pyr"/>
+            </gammaPrior>
+            <gammaPrior shape="0.05" scale="10.0" offset="0.0">
+                <parameter idref="submodel.ag"/>
+            </gammaPrior>
+            <uniformPrior lower="0.0" upper="1.0">
+                <parameter idref="submodel.freq"/>
+            </uniformPrior>
+        </prior>
+        <log>
+            <parameter idref="submodel.pur2pyr"/>
+            <parameter idref="submodel.ag"/>
+            <parameter idref="submodel.pyr2pur"/>
+            <parameter idref="submodel.freq"/>
+        </log>
+    </model>
+    <model id="TIMe">
+        <!-- The TIMef (transitional) substitution model -->
+        <subModel>
+            <gtrModel id="submodel">
+                <frequencies>
+                    <frequencyModel dataType="nucleotide">
+                        <frequencies>
+                            <parameter id="submodel.freq" value="0.25 0.25 0.25 0.25"/>
+                        </frequencies>
+                    </frequencyModel>
+                </frequencies>
+                <rateAC>
+                    <parameter id="submodel.pur2pyr" value="1.0" lower="0.0"/>
+                </rateAC>
+                <rateAG>
+                    <parameter id="submodel.ag" value="1.0" lower="0.0"/>
+                </rateAG>
+                <rateAT>
+                    <parameter id="submodel.pyr2pur" value="1.0" lower="0.0"/>
+                </rateAT>
+                <rateCG>
+                    <parameter idref="submodel.pyr2pur"/>
+                </rateCG>
+                <rateGT>
+                    <parameter idref="submodel.pur2pyr"/>
+                </rateGT>
+            </gtrModel>
+        </subModel>
+        <siteModel id="sitemodel">
+            <substitutionModel>
+                <gtrModel idref="submodel"/>
+            </substitutionModel>
+            <relativeRate>
+                <parameter id="sitemodel.mu" value="1.0" lower="0.0"/>
+            </relativeRate>
+        </siteModel>
+        <operators id="operators" optimizationSchedule="default">
+            <scaleOperator scaleFactor="0.75" weight="0.1">
+                <parameter idref="submodel.pur2pyr"/>
+            </scaleOperator>
+            <scaleOperator scaleFactor="0.75" weight="0.1">
+                <parameter idref="submodel.ag"/>
+            </scaleOperator>
+            <scaleOperator scaleFactor="0.75" weight="0.1">
+                <parameter idref="submodel.pyr2pur"/>
+            </scaleOperator>
+        </operators>
+        <prior id="prior>">
+            <gammaPrior shape="0.05" scale="10.0" offset="0.0">
+                <parameter idref="submodel.pur2pyr"/>
+            </gammaPrior>
+            <gammaPrior shape="0.05" scale="10.0" offset="0.0">
+                <parameter idref="submodel.ag"/>
+            </gammaPrior>
+        </prior>
+        <log>
+            <parameter idref="submodel.pur2pyr"/>
+            <parameter idref="submodel.ag"/>
+            <parameter idref="submodel.pyr2pur"/>
+            <parameter idref="submodel.freq"/>
+        </log>
+    </model>
+	<model id="TIM2">
+		<!-- The TIM (transitional) substitution model -->
+		<!-- AC=AT, CG=GT and unequal base freq. -->
+		<subModel>
+			<gtrModel id="submodel">
+				<frequencies>
+					<frequencyModel dataType="nucleotide">
+						<frequencies>
+							<parameter id="submodel.freq" value="0.25 0.25 0.25 0.25"/>
+						</frequencies>
+					</frequencyModel>
+				</frequencies>
+				<rateAC>
+					<parameter id="submodel.pur2pyr" value="1.0" lower="0.0"/>
+				</rateAC>
+				<rateAG>
+					<parameter id="submodel.ag" value="1.0" lower="0.0"/>
+				</rateAG>
+				<rateAT>
+					<parameter idref="submodel.pur2pyr"/>
+				</rateAT>
+				<rateCG>
+					<parameter id="submodel.pyr2pur" value="1.0" lower="0.0"/>
+				</rateCG>
+				<rateGT>
+					<parameter idref="submodel.pyr2pur"/>
+				</rateGT>
+			</gtrModel>
+		</subModel>
+		<siteModel id="sitemodel">
+			<substitutionModel>
+				<gtrModel idref="submodel"/>
+			</substitutionModel>
+			<relativeRate>
+				<parameter id="sitemodel.mu" value="1.0" lower="0.0"/>
+			</relativeRate>
+		</siteModel>
+		<operators id="operators" optimizationSchedule="default">
+			<scaleOperator scaleFactor="0.75" weight="0.1">
+				<parameter idref="submodel.pur2pyr"/>
+			</scaleOperator>
+			<scaleOperator scaleFactor="0.75" weight="0.1">
+				<parameter idref="submodel.ag"/>
+			</scaleOperator>
+			<scaleOperator scaleFactor="0.75" weight="0.1">
+				<parameter idref="submodel.pyr2pur"/>
+			</scaleOperator>
+			<deltaExchange delta="0.01" weight="0.1">
+				<parameter idref="submodel.freq"/>
+			</deltaExchange>
+		</operators>
+		<prior id="prior">
+			<gammaPrior shape="0.05" scale="10.0" offset="0.0">
+				<parameter idref="submodel.pur2pyr"/>
+			</gammaPrior>
+			<gammaPrior shape="0.05" scale="10.0" offset="0.0">
+				<parameter idref="submodel.ag"/>
+			</gammaPrior>
+			<uniformPrior lower="0.0" upper="1.0">
+				<parameter idref="submodel.freq"/>
+			</uniformPrior>
+		</prior>
+		<log>
+			<parameter idref="submodel.pur2pyr"/>
+			<parameter idref="submodel.ag"/>
+			<parameter idref="submodel.pyr2pur"/>
+			<parameter idref="submodel.freq"/>
+		</log>
+	</model>
+	<model id="TIM2e">
+		<!-- The TIM (transitional) substitution model -->
+		<!-- AC=AT, CG=GT and equal base freq. -->
+		<subModel>
+			<gtrModel id="submodel">
+				<frequencies>
+					<frequencyModel dataType="nucleotide">
+						<frequencies>
+							<parameter id="submodel.freq" value="0.25 0.25 0.25 0.25"/>
+						</frequencies>
+					</frequencyModel>
+				</frequencies>
+				<rateAC>
+					<parameter id="submodel.pur2pyr" value="1.0" lower="0.0"/>
+				</rateAC>
+				<rateAG>
+					<parameter id="submodel.ag" value="1.0" lower="0.0"/>
+				</rateAG>
+				<rateAT>
+					<parameter idref="submodel.pur2pyr"/>
+				</rateAT>
+				<rateCG>
+					<parameter id="submodel.pyr2pur" value="1.0" lower="0.0"/>
+				</rateCG>
+				<rateGT>
+					<parameter idref="submodel.pyr2pur"/>
+				</rateGT>
+			</gtrModel>
+		</subModel>
+		<siteModel id="sitemodel">
+			<substitutionModel>
+				<gtrModel idref="submodel"/>
+			</substitutionModel>
+			<relativeRate>
+				<parameter id="sitemodel.mu" value="1.0" lower="0.0"/>
+			</relativeRate>
+		</siteModel>
+		<operators id="operators" optimizationSchedule="default">
+			<scaleOperator scaleFactor="0.75" weight="0.1">
+				<parameter idref="submodel.pur2pyr"/>
+			</scaleOperator>
+			<scaleOperator scaleFactor="0.75" weight="0.1">
+				<parameter idref="submodel.ag"/>
+			</scaleOperator>
+			<scaleOperator scaleFactor="0.75" weight="0.1">
+				<parameter idref="submodel.pyr2pur"/>
+			</scaleOperator>
+		</operators>
+		<prior id="prior">
+			<gammaPrior shape="0.05" scale="10.0" offset="0.0">
+				<parameter idref="submodel.pur2pyr"/>
+			</gammaPrior>
+			<gammaPrior shape="0.05" scale="10.0" offset="0.0">
+				<parameter idref="submodel.ag"/>
+			</gammaPrior>
+		</prior>
+		<log>
+			<parameter idref="submodel.pur2pyr"/>
+			<parameter idref="submodel.ag"/>
+			<parameter idref="submodel.pyr2pur"/>
+			<parameter idref="submodel.freq"/>
+		</log>
+	</model>
+	<model id="TIM3">
+		<!-- The TIM (transitional) substitution model -->
+		<!-- AC=CG, AT=GT and unequal base freq. -->
+		<subModel>
+			<gtrModel id="submodel">
+				<frequencies>
+					<frequencyModel dataType="nucleotide">
+						<frequencies>
+							<parameter id="submodel.freq" value="0.25 0.25 0.25 0.25"/>
+						</frequencies>
+					</frequencyModel>
+				</frequencies>
+				<rateAC>
+					<parameter id="submodel.pur2pyr" value="1.0" lower="0.0"/>
+				</rateAC>
+				<rateAG>
+					<parameter id="submodel.ag" value="1.0" lower="0.0"/>
+				</rateAG>
+				<rateAT>
+					<parameter id="submodel.pyr2pur" value="1.0" lower="0.0"/>
+				</rateAT>
+				<rateCG>
+					<parameter idref="submodel.pur2pyr"/>
+				</rateCG>
+				<rateGT>
+					<parameter idref="submodel.pyr2pur"/>
+				</rateGT>
+			</gtrModel>
+		</subModel>
+		<siteModel id="sitemodel">
+			<substitutionModel>
+				<gtrModel idref="submodel"/>
+			</substitutionModel>
+			<relativeRate>
+				<parameter id="sitemodel.mu" value="1.0" lower="0.0"/>
+			</relativeRate>
+		</siteModel>
+		<operators id="operators" optimizationSchedule="default">
+			<scaleOperator scaleFactor="0.75" weight="0.1">
+				<parameter idref="submodel.pur2pyr"/>
+			</scaleOperator>
+			<scaleOperator scaleFactor="0.75" weight="0.1">
+				<parameter idref="submodel.ag"/>
+			</scaleOperator>
+			<scaleOperator scaleFactor="0.75" weight="0.1">
+				<parameter idref="submodel.pyr2pur"/>
+			</scaleOperator>
+			<deltaExchange delta="0.01" weight="0.1">
+				<parameter idref="submodel.freq"/>
+			</deltaExchange>
+		</operators>
+		<prior id="prior">
+			<gammaPrior shape="0.05" scale="10.0" offset="0.0">
+				<parameter idref="submodel.pur2pyr"/>
+			</gammaPrior>
+			<gammaPrior shape="0.05" scale="10.0" offset="0.0">
+				<parameter idref="submodel.ag"/>
+			</gammaPrior>
+			<uniformPrior lower="0.0" upper="1.0">
+				<parameter idref="submodel.freq"/>
+			</uniformPrior>
+		</prior>
+		<log>
+			<parameter idref="submodel.pur2pyr"/>
+			<parameter idref="submodel.ag"/>
+			<parameter idref="submodel.pyr2pur"/>
+			<parameter idref="submodel.freq"/>
+		</log>
+	</model>
+	<model id="TIM3e">
+		<!-- The TIM (transitional) substitution model -->
+		<!-- AC=CG, AT=GT and equal base freq. -->
+		<subModel>
+			<gtrModel id="submodel">
+				<frequencies>
+					<frequencyModel dataType="nucleotide">
+						<frequencies>
+							<parameter id="submodel.freq" value="0.25 0.25 0.25 0.25"/>
+						</frequencies>
+					</frequencyModel>
+				</frequencies>
+				<rateAC>
+					<parameter id="submodel.pur2pyr" value="1.0" lower="0.0"/>
+				</rateAC>
+				<rateAG>
+					<parameter id="submodel.ag" value="1.0" lower="0.0"/>
+				</rateAG>
+				<rateAT>
+					<parameter id="submodel.pyr2pur" value="1.0" lower="0.0"/>
+				</rateAT>
+				<rateCG>
+					<parameter idref="submodel.pur2pyr"/>
+				</rateCG>
+				<rateGT>
+					<parameter idref="submodel.pyr2pur"/>
+				</rateGT>
+			</gtrModel>
+		</subModel>
+		<siteModel id="sitemodel">
+			<substitutionModel>
+				<gtrModel idref="submodel"/>
+			</substitutionModel>
+			<relativeRate>
+				<parameter id="sitemodel.mu" value="1.0" lower="0.0"/>
+			</relativeRate>
+		</siteModel>
+		<operators id="operators" optimizationSchedule="default">
+			<scaleOperator scaleFactor="0.75" weight="0.1">
+				<parameter idref="submodel.pur2pyr"/>
+			</scaleOperator>
+			<scaleOperator scaleFactor="0.75" weight="0.1">
+				<parameter idref="submodel.ag"/>
+			</scaleOperator>
+			<scaleOperator scaleFactor="0.75" weight="0.1">
+				<parameter idref="submodel.pyr2pur"/>
+			</scaleOperator>
+		</operators>
+		<prior id="prior">
+			<gammaPrior shape="0.05" scale="10.0" offset="0.0">
+				<parameter idref="submodel.pur2pyr"/>
+			</gammaPrior>
+			<gammaPrior shape="0.05" scale="10.0" offset="0.0">
+				<parameter idref="submodel.ag"/>
+			</gammaPrior>
+		</prior>
+		<log>
+			<parameter idref="submodel.pur2pyr"/>
+			<parameter idref="submodel.ag"/>
+			<parameter idref="submodel.pyr2pur"/>
+			<parameter idref="submodel.freq"/>
+		</log>
+	</model>
+	<model id="TVM">
+        <!-- The TVM (transversional) substitution model  -->
+        <subModel>
+            <gtrModel id="submodel">
+                <frequencies>
+                    <frequencyModel dataType="nucleotide">
+                        <frequencies>
+                            <parameter id="submodel.freq" value="0.25 0.25 0.25 0.25"/>
+                        </frequencies>
+                    </frequencyModel>
+                </frequencies>
+                <rateAC>
+                    <parameter id="submodel.ac" value="1.0" lower="0.0"/>
+                </rateAC>
+                <rateAG>
+                    <parameter id="submodel.ag" value="1.0"/>
+                </rateAG>
+                <rateAT>
+                    <parameter id="submodel.at" value="1.0" lower="0.0"/>
+                </rateAT>
+                <rateCG>
+                    <parameter id="submodel.cg" value="1.0" lower="0.0"/>
+                </rateCG>
+                <rateGT>
+                    <parameter id="submodel.gt" value="1.0" lower="0.0"/>
+                </rateGT>
+            </gtrModel>
+        </subModel>
+        <siteModel id="sitemodel">
+            <substitutionModel>
+                <gtrModel idref="submodel"/>
+            </substitutionModel>
+            <relativeRate>
+                <parameter id="sitemodel.mu" value="1.0" lower="0.0"/>
+            </relativeRate>
+        </siteModel>
+        <operators id="operators" optimizationSchedule="default">
+            <scaleOperator scaleFactor="0.75" weight="0.1">
+                <parameter idref="submodel.ac"/>
+            </scaleOperator>
+            <scaleOperator scaleFactor="0.75" weight="0.1">
+                <parameter idref="submodel.at"/>
+            </scaleOperator>
+            <scaleOperator scaleFactor="0.75" weight="0.1">
+                <parameter idref="submodel.cg"/>
+            </scaleOperator>
+            <scaleOperator scaleFactor="0.75" weight="0.1">
+                <parameter idref="submodel.gt"/>
+            </scaleOperator>
+            <deltaExchange delta="0.01" weight="0.1">
+                <parameter idref="submodel.freq"/>
+            </deltaExchange>
+        </operators>
+        <prior id="prior">
+            <gammaPrior shape="0.05" scale="10.0" offset="0.0">
+                <parameter idref="submodel.ac"/>
+            </gammaPrior>
+            <gammaPrior shape="0.05" scale="10.0" offset="0.0">
+                <parameter idref="submodel.at"/>
+            </gammaPrior>
+            <gammaPrior shape="0.05" scale="10.0" offset="0.0">
+                <parameter idref="submodel.cg"/>
+            </gammaPrior>
+            <gammaPrior shape="0.05" scale="10.0" offset="0.0">
+                <parameter idref="submodel.gt"/>
+            </gammaPrior>
+            <uniformPrior lower="0.0" upper="1.0">
+                <parameter idref="submodel.freq"/>
+            </uniformPrior>
+        </prior>
+        <log>
+            <parameter idref="submodel.ac"/>
+            <parameter idref="submodel.at"/>
+            <parameter idref="submodel.cg"/>
+            <parameter idref="submodel.gt"/>
+            <parameter idref="submodel.freq"/>
+        </log>
+    </model>
+    <model id="TVMe">
+        <!-- The TVMef (transversional) substitution model -->
+        <subModel>
+            <gtrModel id="submodel">
+                <frequencies>
+                    <frequencyModel dataType="nucleotide">
+                        <frequencies>
+                            <parameter id="submodel.freq" value="0.25 0.25 0.25 0.25"/>
+                        </frequencies>
+                    </frequencyModel>
+                </frequencies>
+                <rateAC>
+                    <parameter id="submodel.ac" value="1.0" lower="0.0"/>
+                </rateAC>
+                <rateAG>
+                    <parameter id="submodel.ag" value="1.0"/>
+                </rateAG>
+                <rateAT>
+                    <parameter id="submodel.at" value="1.0" lower="0.0"/>
+                </rateAT>
+                <rateCG>
+                    <parameter id="submodel.cg" value="1.0" lower="0.0"/>
+                </rateCG>
+                <rateGT>
+                    <parameter id="submodel.gt" value="1.0" lower="0.0"/>
+                </rateGT>
+            </gtrModel>
+        </subModel>
+        <siteModel id="sitemodel">
+            <substitutionModel>
+                <gtrModel idref="submodel"/>
+            </substitutionModel>
+            <relativeRate>
+                <parameter id="sitemodel.mu" value="1.0" lower="0.0"/>
+            </relativeRate>
+        </siteModel>
+        <operators id="operators" optimizationSchedule="default">
+            <scaleOperator scaleFactor="0.75" weight="0.1">
+                <parameter idref="submodel.ac"/>
+            </scaleOperator>
+            <scaleOperator scaleFactor="0.75" weight="0.1">
+                <parameter idref="submodel.at"/>
+            </scaleOperator>
+            <scaleOperator scaleFactor="0.75" weight="0.1">
+                <parameter idref="submodel.cg"/>
+            </scaleOperator>
+            <scaleOperator scaleFactor="0.75" weight="0.1">
+                <parameter idref="submodel.gt"/>
+            </scaleOperator>
+        </operators>
+        <prior id="prior">
+            <gammaPrior shape="0.05" scale="10.0" offset="0.0">
+                <parameter idref="submodel.ac"/>
+            </gammaPrior>
+            <gammaPrior shape="0.05" scale="10.0" offset="0.0">
+                <parameter idref="submodel.at"/>
+            </gammaPrior>
+            <gammaPrior shape="0.05" scale="10.0" offset="0.0">
+                <parameter idref="submodel.cg"/>
+            </gammaPrior>
+            <gammaPrior shape="0.05" scale="10.0" offset="0.0">
+                <parameter idref="submodel.gt"/>
+            </gammaPrior>
+        </prior>
+        <log>
+            <parameter idref="submodel.ac"/>
+            <parameter idref="submodel.at"/>
+            <parameter idref="submodel.cg"/>
+            <parameter idref="submodel.gt"/>
+        </log>
+    </model>
+	<model id="TPM2">
+		<!-- AC=AT, AG=CT, CG=GT and equal base freq. -->
+		<subModel>
+			<gtrModel id="submodel">
+				<frequencies>
+					<frequencyModel dataType="nucleotide">
+						<frequencies>
+							<parameter id="submodel.freq" value="0.25 0.25 0.25 0.25"/>
+						</frequencies>
+					</frequencyModel>
+				</frequencies>
+				<rateAC>
+					<parameter id="submodel.pur2pyr" value="1.0" lower="0.0"/>
+				</rateAC>
+				<rateAG>
+					<parameter id="submodel.ag" value="1.0"/>
+				</rateAG>
+				<rateAT>
+					<parameter idref="submodel.pur2pyr"/>
+				</rateAT>
+				<rateCG>
+					<parameter id="submodel.pyr2pur" value="1.0" lower="0.0"/>
+				</rateCG>
+				<rateGT>
+					<parameter idref="submodel.pyr2pur"/>
+				</rateGT>
+			</gtrModel>
+		</subModel>
+		<siteModel id="sitemodel">
+			<substitutionModel>
+				<gtrModel idref="submodel"/>
+			</substitutionModel>
+			<relativeRate>
+				<parameter id="sitemodel.mu" value="1.0" lower="0.0"/>
+			</relativeRate>
+		</siteModel>
+		<operators id="operators" optimizationSchedule="default">
+			<scaleOperator scaleFactor="0.75" weight="0.1">
+				<parameter idref="submodel.pur2pyr"/>
+			</scaleOperator>
+			<scaleOperator scaleFactor="0.75" weight="0.1">
+				<parameter idref="submodel.pyr2pur"/>
+			</scaleOperator>
+		</operators>
+		<prior id="prior">
+			<gammaPrior shape="0.05" scale="10.0" offset="0.0">
+				<parameter idref="submodel.pur2pyr"/>
+			</gammaPrior>
+			<gammaPrior shape="0.05" scale="10.0" offset="0.0">
+				<parameter idref="submodel.pyr2pur"/>
+			</gammaPrior>
+		</prior>
+		<log>
+			<parameter idref="submodel.pur2pyr"/>
+			<parameter idref="submodel.pyr2pur"/>
+			<parameter idref="submodel.freq"/>
+		</log>
+	</model>
+	<model id="TPM2u">
+		<!-- AC=AT, AG=CT, CG=GT and unequal base freq. -->
+		<subModel>
+			<gtrModel id="submodel">
+				<frequencies>
+					<frequencyModel dataType="nucleotide">
+						<frequencies>
+							<parameter id="submodel.freq" value="0.25 0.25 0.25 0.25"/>
+						</frequencies>
+					</frequencyModel>
+				</frequencies>
+				<rateAC>
+					<parameter id="submodel.pur2pyr" value="1.0" lower="0.0"/>
+				</rateAC>
+				<rateAG>
+					<parameter id="submodel.ag" value="1.0"/>
+				</rateAG>
+				<rateAT>
+					<parameter idref="submodel.pur2pyr"/>
+				</rateAT>
+				<rateCG>
+					<parameter id="submodel.pyr2pur" value="1.0" lower="0.0"/>
+				</rateCG>
+				<rateGT>
+					<parameter idref="submodel.pyr2pur"/>
+				</rateGT>
+			</gtrModel>
+		</subModel>
+		<siteModel id="sitemodel">
+			<substitutionModel>
+				<gtrModel idref="submodel"/>
+			</substitutionModel>
+			<relativeRate>
+				<parameter id="sitemodel.mu" value="1.0" lower="0.0"/>
+			</relativeRate>
+		</siteModel>
+		<operators id="operators" optimizationSchedule="default">
+			<scaleOperator scaleFactor="0.75" weight="0.1">
+				<parameter idref="submodel.pur2pyr"/>
+			</scaleOperator>
+			<scaleOperator scaleFactor="0.75" weight="0.1">
+				<parameter idref="submodel.pyr2pur"/>
+			</scaleOperator>
+			<deltaExchange delta="0.01" weight="0.1">
+				<parameter idref="submodel.freq"/>
+			</deltaExchange>
+		</operators>
+		<prior id="prior">
+			<gammaPrior shape="0.05" scale="10.0" offset="0.0">
+				<parameter idref="submodel.pur2pyr"/>
+			</gammaPrior>
+			<gammaPrior shape="0.05" scale="10.0" offset="0.0">
+				<parameter idref="submodel.pyr2pur"/>
+			</gammaPrior>
+			<uniformPrior lower="0.0" upper="1.0">
+				<parameter idref="submodel.freq"/>
+			</uniformPrior>
+		</prior>
+		<log>
+			<parameter idref="submodel.pur2pyr"/>
+			<parameter idref="submodel.pyr2pur"/>
+			<parameter idref="submodel.freq"/>
+		</log>
+	</model>
+	<model id="TPM3">
+		<!-- AC=CG, AG=CT, AT=GT and equal base freq. -->
+		<subModel>
+			<gtrModel id="submodel">
+				<frequencies>
+					<frequencyModel dataType="nucleotide">
+						<frequencies>
+							<parameter id="submodel.freq" value="0.25 0.25 0.25 0.25"/>
+						</frequencies>
+					</frequencyModel>
+				</frequencies>
+				<rateAC>
+					<parameter id="submodel.pur2pyr" value="1.0" lower="0.0"/>
+				</rateAC>
+				<rateAG>
+					<parameter id="submodel.ag" value="1.0"/>
+				</rateAG>
+				<rateAT>
+					<parameter id="submodel.pyr2pur" value="1.0" lower="0.0"/>
+				</rateAT>
+				<rateCG>
+					<parameter idref="submodel.pur2pyr"/>
+				</rateCG>
+				<rateGT>
+					<parameter idref="submodel.pyr2pur"/>
+				</rateGT>
+			</gtrModel>
+		</subModel>
+		<siteModel id="sitemodel">
+			<substitutionModel>
+				<gtrModel idref="submodel"/>
+			</substitutionModel>
+			<relativeRate>
+				<parameter id="sitemodel.mu" value="1.0" lower="0.0"/>
+			</relativeRate>
+		</siteModel>
+		<operators id="operators" optimizationSchedule="default">
+			<scaleOperator scaleFactor="0.75" weight="0.1">
+				<parameter idref="submodel.pur2pyr"/>
+			</scaleOperator>
+			<scaleOperator scaleFactor="0.75" weight="0.1">
+				<parameter idref="submodel.pyr2pur"/>
+			</scaleOperator>
+		</operators>
+		<prior id="prior">
+			<gammaPrior shape="0.05" scale="10.0" offset="0.0">
+				<parameter idref="submodel.pur2pyr"/>
+			</gammaPrior>
+			<gammaPrior shape="0.05" scale="10.0" offset="0.0">
+				<parameter idref="submodel.pyr2pur"/>
+			</gammaPrior>
+		</prior>
+		<log>
+			<parameter idref="submodel.pur2pyr"/>
+			<parameter idref="submodel.pyr2pur"/>
+			<parameter idref="submodel.freq"/>
+		</log>
+	</model>
+	<model id="TPM3u">
+		<!-- AC=CG, AG=CT, AT=GT and equal unbase freq. -->
+		<subModel>
+			<gtrModel id="submodel">
+				<frequencies>
+					<frequencyModel dataType="nucleotide">
+						<frequencies>
+							<parameter id="submodel.freq" value="0.25 0.25 0.25 0.25"/>
+						</frequencies>
+					</frequencyModel>
+				</frequencies>
+				<rateAC>
+					<parameter id="submodel.pur2pyr" value="1.0" lower="0.0"/>
+				</rateAC>
+				<rateAG>
+					<parameter id="submodel.ag" value="1.0"/>
+				</rateAG>
+				<rateAT>
+					<parameter id="submodel.pyr2pur" value="1.0" lower="0.0"/>
+				</rateAT>
+				<rateCG>
+					<parameter idref="submodel.pur2pyr"/>
+				</rateCG>
+				<rateGT>
+					<parameter idref="submodel.pyr2pur"/>
+				</rateGT>
+			</gtrModel>
+		</subModel>
+		<siteModel id="sitemodel">
+			<substitutionModel>
+				<gtrModel idref="submodel"/>
+			</substitutionModel>
+			<relativeRate>
+				<parameter id="sitemodel.mu" value="1.0" lower="0.0"/>
+			</relativeRate>
+		</siteModel>
+		<operators id="operators" optimizationSchedule="default">
+			<scaleOperator scaleFactor="0.75" weight="0.1">
+				<parameter idref="submodel.pur2pyr"/>
+			</scaleOperator>
+			<scaleOperator scaleFactor="0.75" weight="0.1">
+				<parameter idref="submodel.pyr2pur"/>
+			</scaleOperator>
+			<deltaExchange delta="0.01" weight="0.1">
+				<parameter idref="submodel.freq"/>
+			</deltaExchange>
+		</operators>
+		<prior id="prior">
+			<gammaPrior shape="0.05" scale="10.0" offset="0.0">
+				<parameter idref="submodel.pur2pyr"/>
+			</gammaPrior>
+			<gammaPrior shape="0.05" scale="10.0" offset="0.0">
+				<parameter idref="submodel.pyr2pur"/>
+			</gammaPrior>
+			<uniformPrior lower="0.0" upper="1.0">
+				<parameter idref="submodel.freq"/>
+			</uniformPrior>
+		</prior>
+		<log>
+			<parameter idref="submodel.pur2pyr"/>
+			<parameter idref="submodel.pyr2pur"/>
+			<parameter idref="submodel.freq"/>
+		</log>
+	</model>
+    <model id="SYM">
+        <!-- The SYM (symmetrical) substitution model (Zharkikh, 1994) -->
+        <subModel>
+            <gtrModel id="submodel">
+                <frequencies>
+                    <frequencyModel dataType="nucleotide">
+                        <frequencies>
+                            <parameter id="submodel.freq" value="0.25 0.25 0.25 0.25"/>
+                        </frequencies>
+                    </frequencyModel>
+                </frequencies>
+                <rateAC>
+                    <parameter id="submodel.ac" value="1.0" lower="0.0"/>
+                </rateAC>
+                <rateAG>
+                    <parameter id="submodel.ag" value="1.0" lower="0.0"/>
+                </rateAG>
+                <rateAT>
+                    <parameter id="submodel.at" value="1.0" lower="0.0"/>
+                </rateAT>
+                <rateCG>
+                    <parameter id="submodel.cg" value="1.0" lower="0.0"/>
+                </rateCG>
+                <rateGT>
+                    <parameter id="submodel.gt" value="1.0" lower="0.0"/>
+                </rateGT>
+            </gtrModel>
+        </subModel>
+        <siteModel id="sitemodel">
+            <substitutionModel>
+                <gtrModel idref="submodel"/>
+            </substitutionModel>
+            <relativeRate>
+                <parameter id="sitemodel.mu" value="1.0" lower="0.0"/>
+            </relativeRate>
+        </siteModel>
+        <operators id="operators" optimizationSchedule="default">
+            <scaleOperator scaleFactor="0.75" weight="0.1">
+                <parameter idref="submodel.ac"/>
+            </scaleOperator>
+            <scaleOperator scaleFactor="0.75" weight="0.1">
+                <parameter idref="submodel.ag"/>
+            </scaleOperator>
+            <scaleOperator scaleFactor="0.75" weight="0.1">
+                <parameter idref="submodel.at"/>
+            </scaleOperator>
+            <scaleOperator scaleFactor="0.75" weight="0.1">
+                <parameter idref="submodel.cg"/>
+            </scaleOperator>
+            <scaleOperator scaleFactor="0.75" weight="0.1">
+                <parameter idref="submodel.gt"/>
+            </scaleOperator>
+        </operators>
+        <prior id="prior">
+            <gammaPrior shape="0.05" scale="10.0" offset="0.0">
+                <parameter idref="submodel.ac"/>
+            </gammaPrior>
+            <gammaPrior shape="0.05" scale="10.0" offset="0.0">
+                <parameter idref="submodel.ag"/>
+            </gammaPrior>
+            <gammaPrior shape="0.05" scale="10.0" offset="0.0">
+                <parameter idref="submodel.at"/>
+            </gammaPrior>
+            <gammaPrior shape="0.05" scale="10.0" offset="0.0">
+                <parameter idref="submodel.cg"/>
+            </gammaPrior>
+            <gammaPrior shape="0.05" scale="10.0" offset="0.0">
+                <parameter idref="submodel.gt"/>
+            </gammaPrior>
+        </prior>
+        <log>
+            <parameter idref="submodel.ac"/>
+            <parameter idref="submodel.ag"/>
+            <parameter idref="submodel.at"/>
+            <parameter idref="submodel.cg"/>
+            <parameter idref="submodel.gt"/>
+            <parameter idref="submodel.freq"/>
+        </log>
+    </model>
+    <model id="GTR">
+        <!-- The GTR (general time reversible) substitution model (Lanace et al., 1984; Tavare, 1986) -->
+        <subModel>
+            <gtrModel id="submodel">
+                <frequencies>
+                    <frequencyModel dataType="nucleotide">
+                        <frequencies>
+                            <parameter id="submodel.freq" value="0.25 0.25 0.25 0.25"/>
+                        </frequencies>
+                    </frequencyModel>
+                </frequencies>
+                <rateAC>
+                    <parameter id="submodel.ac" value="1.0" lower="0.0"/>
+                </rateAC>
+                <rateAG>
+                    <parameter id="submodel.ag" value="1.0" lower="0.0"/>
+                </rateAG>
+                <rateAT>
+                    <parameter id="submodel.at" value="1.0" lower="0.0"/>
+                </rateAT>
+                <rateCG>
+                    <parameter id="submodel.cg" value="1.0" lower="0.0"/>
+                </rateCG>
+                <rateGT>
+                    <parameter id="submodel.gt" value="1.0" lower="0.0"/>
+                </rateGT>
+            </gtrModel>
+        </subModel>
+        <siteModel id="sitemodel">
+            <substitutionModel>
+                <gtrModel idref="submodel"/>
+            </substitutionModel>
+            <relativeRate>
+                <parameter id="sitemodel.mu" value="1.0" lower="0.0"/>
+            </relativeRate>
+        </siteModel>
+        <operators id="operators" optimizationSchedule="default">
+            <scaleOperator scaleFactor="0.75" weight="0.1">
+                <parameter idref="submodel.ac"/>
+            </scaleOperator>
+            <scaleOperator scaleFactor="0.75" weight="0.1">
+                <parameter idref="submodel.ag"/>
+            </scaleOperator>
+            <scaleOperator scaleFactor="0.75" weight="0.1">
+                <parameter idref="submodel.at"/>
+            </scaleOperator>
+            <scaleOperator scaleFactor="0.75" weight="0.1">
+                <parameter idref="submodel.cg"/>
+            </scaleOperator>
+            <scaleOperator scaleFactor="0.75" weight="0.1">
+                <parameter idref="submodel.gt"/>
+            </scaleOperator>
+            <deltaExchange delta="0.01" weight="0.1">
+                <parameter idref="submodel.freq"/>
+            </deltaExchange>
+        </operators>
+        <prior id="prior">
+            <gammaPrior shape="0.05" scale="10.0" offset="0.0">
+                <parameter idref="submodel.ac"/>
+            </gammaPrior>
+            <gammaPrior shape="0.05" scale="10.0" offset="0.0">
+                <parameter idref="submodel.ag"/>
+            </gammaPrior>
+            <gammaPrior shape="0.05" scale="10.0" offset="0.0">
+                <parameter idref="submodel.at"/>
+            </gammaPrior>
+            <gammaPrior shape="0.05" scale="10.0" offset="0.0">
+                <parameter idref="submodel.cg"/>
+            </gammaPrior>
+            <gammaPrior shape="0.05" scale="10.0" offset="0.0">
+                <parameter idref="submodel.gt"/>
+            </gammaPrior>
+            <uniformPrior lower="0.0" upper="1.0">
+                <parameter idref="submodel.freq"/>
+            </uniformPrior>
+        </prior>
+        <log>
+            <parameter idref="submodel.ac"/>
+            <parameter idref="submodel.ag"/>
+            <parameter idref="submodel.at"/>
+            <parameter idref="submodel.cg"/>
+            <parameter idref="submodel.gt"/>
+            <parameter idref="submodel.freq"/>
+        </log>
+    </model>
+</models>
