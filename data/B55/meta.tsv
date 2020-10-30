@@ -1,66 +1,67 @@
-accver	date	cc	title
-MK123981.1	2012-12-31	CN	Human adenovirus 55 strain TY26, complete genome
-MK123980.1	2012-12-31	CN	Human adenovirus 55 strain TY12, complete genome
-MK123979.1	2010-12-31	CN	Human adenovirus 55, complete genome
-MK123978.1	2018-05-31	CN	Human adenovirus 55 strain 267, complete genome
-MH256657.1	2018-03-02	CN	UNVERIFIED: Human adenovirus 55 isolate DYN, complete genome
-MH256656.1	2018-02-12	CN	UNVERIFIED: Human adenovirus 55 isolate 1806003, complete genome
-MH256655.1	2018-02-12	CN	UNVERIFIED: Human adenovirus 55 isolate 1804001, complete genome
-MH256654.1	2018-02-11	CN	UNVERIFIED: Human adenovirus 55 isolate 24-2, complete genome
-MH256653.1	2018-02-11	CN	UNVERIFIED: Human adenovirus 55 isolate 24-1, complete genome
-KY471323.1	?	KR	Human adenovirus 55 strain AFMC 16-0096, complete genome
-KY471322.1	?	KR	Human adenovirus 55 strain AFMC 16-0035, complete genome
-KY471321.1	?	KR	Human adenovirus 55 strain AFMC 16-0081, complete genome
-KY471320.1	?	KR	Human adenovirus 55 strain AFMC 16-0074, complete genome
-KY471319.1	?	KR	Human adenovirus 55 strain AFMC 16-0094, complete genome
-KY471318.1	?	KR	Human adenovirus 55 strain AFMC 16-0007, complete genome
-KP896484.1	2013-01-14	CN	Human adenovirus B55 strain Tianjin/TJ01/2013, complete genome
-KP896483.1	2013-02-24	CN	Human adenovirus B55 strain Liaoning/LS01/2013, complete genome
-KP896478.1	2012-02-10	CN	Human adenovirus B55 strain Hebei/BD01/2012, complete genome
-KX289874.1	2015-11-11	CN	Human adenovirus 55 isolate JS201501, complete genome
-KY070248.1	2016-06-29	CN	Human adenovirus 55 isolate 60-GD-2016, complete genome
-KX494979.1	2016-02-22	KR	Human adenovirus 55 strain AFMC 16-0011, complete genome
-JX491639.1	2011-03-23	CN	Human adenovirus 55 isolate HAdV-B/CHN/BJ01/2011/55[P14H11F14], complete genome
-KP279748.1	2012-04-17	CN	Human adenovirus 55 strain human/CHN/AQ-1/2012/55[P14/H11/F14], complete genome
-KC857701.1	2012-04-25	CN	Human adenovirus 55 strain HAdV B55 XZ2012-492, complete genome
-KF908851.1	2013-01-13	CN	Human adenovirus 55 strain TJ-2013-90, complete genome
-KJ883522.1	2011-12-04	CN	Human adenovirus 55 isolate Shanxi/QZ01/2011, complete genome
-KJ883521.1	2013-04-06	CN	Human adenovirus 55 isolate Hebei/BD6729/2013, complete genome
-KJ883520.1	2013-04-05	CN	Human adenovirus 55 isolate Hebei/BD6728/2013, complete genome
-JX123029.1	2012-01-07	CN	Human adenovirus 55 isolate CQ-2903, complete genome
-JX123028.1	2011-04-21	CN	Human adenovirus 55 isolate CQ-1657, complete genome
-JX123027.1	2010-08-17	CN	Human adenovirus 55 isolate CQ-814, complete genome
-FJ643676.1	2006-03-31	CN	Human adenovirus 55 strain QS-DLL, complete genome
-MN052861.1	2018-04-25	CN	Human adenovirus 55, complete genome
-MK886831.1	2015-08-30	CN	Human adenovirus 55 isolate HAdV-B55/CHN/BJDX01/2015, complete genome
-MT513753.1	2005-12-31	US	Human adenovirus 55 isolate CHOP6887, complete genome
-MN654377.1	2008-12-31	KR	Human adenovirus 55 isolate WPAFB48, complete genome
-MN654378.1	2008-12-31	KR	Human adenovirus 55 isolate WPAFB25, complete genome
-MN654379.1	2008-12-31	KR	Human adenovirus 55 isolate WPAFB24, complete genome
-MN654380.1	1999-12-31	EG	Human adenovirus 55 isolate NAMRU3-E3, complete genome
-MN654381.1	1999-12-31	EG	Human adenovirus 55 isolate NAMRU3-E4, complete genome
-MN654382.1	2001-12-31	EG	Human adenovirus 55 isolate NAMRU3-E66, complete genome
-MN654383.1	1999-12-31	EG	Human adenovirus 55 isolate NAMRU3-E72, complete genome
-MN654384.1	2007-12-31	EG	Human adenovirus 55 isolate NAMRU3 2008-905223, complete genome
-MN654385.1	1999-12-31	EG	Human adenovirus 55 isolate NAMRU3-E6, complete genome
-MN654386.1	2006-12-31	EG	Human adenovirus 55 isolate NAMRU3 2007-905716, complete genome
-MN654387.1	2008-12-31	EG	Human adenovirus 55 isolate NAMRU3 2009-908968, complete genome
-MN654388.1	2004-12-31	SG	Human adenovirus 55 isolate SNG1218, complete genome
-MN654389.1	2004-12-31	SG	Human adenovirus 55 isolate SNG1223, complete genome
-MN654391.1	2004-12-31	EG	Human adenovirus 55 isolate NAMRU3 2005-908017, complete genome
-MN654392.1	1996-12-31	US	Human adenovirus 55 isolate CDC97026382, complete genome
-MN654393.1	2011-12-31	JP	Human adenovirus 55 isolate WPAFB415, complete genome
-MN654394.1	1975-12-31	US	Human adenovirus 55 isolate CADOH VRDL 76-0669, complete genome
-MN654395.1	1968-12-31	ES	Human adenovirus 55 isolate HAdV-11/14 strain 273, complete genome
-MN654376.1	2008-12-31	KR	Human adenovirus 55 isolate WPAFB75, complete genome
-MN654375.1	2008-12-31	KR	Human adenovirus 55 isolate WPAFB69, complete genome
-MN654390.1	2004-12-31	EG	Human adenovirus 55 isolate NAMRU3 2005-909685, complete genome
-MT806170.1	2019-04-30	CN	Human adenovirus 55 strain HB107/CHN/2019, complete genome
-MT806171.1	2019-04-30	CN	Human adenovirus 55 strain HB111/CHN/2019, complete genome
-MT806173.1	2019-04-30	CN	Human adenovirus 55 strain HB203/CHN/2019, complete genome
-MT806175.1	2019-04-30	CN	Human adenovirus 55 strain HB208/CHN/2019, complete genome
-MT806174.1	2019-04-30	CN	Human adenovirus 55 strain HB204/CHN/2019, complete genome
-MT806172.1	2019-04-30	CN	Human adenovirus 55 strain HB201/CHN/2019, complete genome
-JX423385.1	2001-04-30	EG	Human adenovirus B strain human/EGY/ak37_AdV11a/2001/55[P14H11F14], complete genome
-JX423384.1	2004-12-31	AR	Human adenovirus B strain human/ARG/ak36_AdV11a/2005/55[P14H11F14], complete genome
-MK883606.1	2012-02-27	CN	Human mastadenovirus B isolate Human/China/Shanghai/3961/2012/55[P14H11F14], complete genome
+accver	date	cc	type	title	organism	collection_date	country
+FJ597732.1	2005-05-25	SG	55	Human adenovirus 11a strain SGN1222, complete genome	Human adenovirus 11a	26-May-2005	Singapore
+MK123981.1	2012-12-31	CN	55	Human adenovirus 55 strain TY26, complete genome	Human adenovirus 55	2013	China
+MK123980.1	2012-12-31	CN	55	Human adenovirus 55 strain TY12, complete genome	Human adenovirus 55	2013	China
+MK123979.1	2010-12-31	CN	55	Human adenovirus 55, complete genome	Human adenovirus 55	2011	China
+MK123978.1	2018-05-31	CN	55	Human adenovirus 55 strain 267, complete genome	Human adenovirus 55	Jun-2018	China: Guangzhou
+MH256657.1	2018-03-02	CN	55	UNVERIFIED: Human adenovirus 55 isolate DYN, complete genome	Human adenovirus 55	03-Mar-2018	China
+MH256656.1	2018-02-12	CN	55	UNVERIFIED: Human adenovirus 55 isolate 1806003, complete genome	Human adenovirus 55	13-Feb-2018	China
+MH256655.1	2018-02-12	CN	55	UNVERIFIED: Human adenovirus 55 isolate 1804001, complete genome	Human adenovirus 55	13-Feb-2018	China
+MH256654.1	2018-02-11	CN	55	UNVERIFIED: Human adenovirus 55 isolate 24-2, complete genome	Human adenovirus 55	12-Feb-2018	China
+MH256653.1	2018-02-11	CN	55	UNVERIFIED: Human adenovirus 55 isolate 24-1, complete genome	Human adenovirus 55	12-Feb-2018	China
+KY471323.1	?	KR	55	Human adenovirus 55 strain AFMC 16-0096, complete genome	Human adenovirus 55	?	South Korea
+KY471322.1	?	KR	55	Human adenovirus 55 strain AFMC 16-0035, complete genome	Human adenovirus 55	?	South Korea
+KY471321.1	?	KR	55	Human adenovirus 55 strain AFMC 16-0081, complete genome	Human adenovirus 55	?	South Korea
+KY471320.1	?	KR	55	Human adenovirus 55 strain AFMC 16-0074, complete genome	Human adenovirus 55	?	South Korea
+KY471319.1	?	KR	55	Human adenovirus 55 strain AFMC 16-0094, complete genome	Human adenovirus 55	?	South Korea
+KY471318.1	?	KR	55	Human adenovirus 55 strain AFMC 16-0007, complete genome	Human adenovirus 55	?	South Korea
+KP896484.1	2013-01-14	CN	55	Human adenovirus B55 strain Tianjin/TJ01/2013, complete genome	Human adenovirus 55	15-Jan-2013	China
+KP896483.1	2013-02-24	CN	55	Human adenovirus B55 strain Liaoning/LS01/2013, complete genome	Human adenovirus 55	25-Feb-2013	China
+KP896478.1	2012-02-10	CN	55	Human adenovirus B55 strain Hebei/BD01/2012, complete genome	Human adenovirus 55	11-Feb-2012	China
+KX289874.1	2015-11-11	CN	55	Human adenovirus 55 isolate JS201501, complete genome	Human adenovirus 55	12-Nov-2015	China
+KY070248.1	2016-06-29	CN	55	Human adenovirus 55 isolate 60-GD-2016, complete genome	Human adenovirus 55	30-Jun-2016	China
+KX494979.1	2016-02-22	KR	55	Human adenovirus 55 strain AFMC 16-0011, complete genome	Human adenovirus 55	23-Feb-2016	South Korea
+JX491639.1	2011-03-23	CN	55	Human adenovirus 55 isolate HAdV-B/CHN/BJ01/2011/55[P14H11F14], complete genome	Human adenovirus 55	24-Mar-2011	China
+KP279748.1	2012-04-17	CN	55	Human adenovirus 55 strain human/CHN/AQ-1/2012/55[P14/H11/F14], complete genome	Human adenovirus 55	18-Apr-2012	China
+KC857701.1	2012-04-25	CN	55	Human adenovirus 55 strain HAdV B55 XZ2012-492, complete genome	Human adenovirus 55	26-Apr-2012	China
+KF908851.1	2013-01-13	CN	55	Human adenovirus 55 strain TJ-2013-90, complete genome	Human adenovirus 55	14-Jan-2013	China
+KJ883522.1	2011-12-04	CN	55	Human adenovirus 55 isolate Shanxi/QZ01/2011, complete genome	Human adenovirus 55	05-Dec-2011	China
+KJ883521.1	2013-04-06	CN	55	Human adenovirus 55 isolate Hebei/BD6729/2013, complete genome	Human adenovirus 55	07-Apr-2013	China
+KJ883520.1	2013-04-05	CN	55	Human adenovirus 55 isolate Hebei/BD6728/2013, complete genome	Human adenovirus 55	06-Apr-2013	China
+JX123029.1	2012-01-07	CN	55	Human adenovirus 55 isolate CQ-2903, complete genome	Human adenovirus 55	08-Jan-2012	China
+JX123028.1	2011-04-21	CN	55	Human adenovirus 55 isolate CQ-1657, complete genome	Human adenovirus 55	22-Apr-2011	China
+JX123027.1	2010-08-17	CN	55	Human adenovirus 55 isolate CQ-814, complete genome	Human adenovirus 55	18-Aug-2010	China
+FJ643676.1	2006-03-31	CN	55	Human adenovirus 55 strain QS-DLL, complete genome	Human adenovirus 55	Apr-2006	China: Shanxi, Qishan
+MN052861.1	2018-04-25	CN	55	Human adenovirus 55, complete genome	Human adenovirus 55	26-Apr-2018	China
+MK886831.1	2015-08-30	CN	55	Human adenovirus 55 isolate HAdV-B55/CHN/BJDX01/2015, complete genome	Human adenovirus 55	31-Aug-2015	China
+MT513753.1	2005-12-31	US	55	Human adenovirus 55 isolate CHOP6887, complete genome	Human adenovirus 55	2006	USA
+MN654377.1	2008-12-31	KR	55	Human adenovirus 55 isolate WPAFB48, complete genome	Human adenovirus 55	2009	South Korea
+MN654378.1	2008-12-31	KR	55	Human adenovirus 55 isolate WPAFB25, complete genome	Human adenovirus 55	2009	South Korea
+MN654379.1	2008-12-31	KR	55	Human adenovirus 55 isolate WPAFB24, complete genome	Human adenovirus 55	2009	South Korea
+MN654380.1	1999-12-31	EG	55	Human adenovirus 55 isolate NAMRU3-E3, complete genome	Human adenovirus 55	2000	Egypt
+MN654381.1	1999-12-31	EG	55	Human adenovirus 55 isolate NAMRU3-E4, complete genome	Human adenovirus 55	2000	Egypt
+MN654382.1	2001-12-31	EG	55	Human adenovirus 55 isolate NAMRU3-E66, complete genome	Human adenovirus 55	2002	Egypt
+MN654383.1	1999-12-31	EG	55	Human adenovirus 55 isolate NAMRU3-E72, complete genome	Human adenovirus 55	2000	Egypt
+MN654384.1	2007-12-31	EG	55	Human adenovirus 55 isolate NAMRU3 2008-905223, complete genome	Human adenovirus 55	2008	Egypt
+MN654385.1	1999-12-31	EG	55	Human adenovirus 55 isolate NAMRU3-E6, complete genome	Human adenovirus 55	2000	Egypt
+MN654386.1	2006-12-31	EG	55	Human adenovirus 55 isolate NAMRU3 2007-905716, complete genome	Human adenovirus 55	2007	Egypt
+MN654387.1	2008-12-31	EG	55	Human adenovirus 55 isolate NAMRU3 2009-908968, complete genome	Human adenovirus 55	2009	Egypt
+MN654388.1	2004-12-31	SG	55	Human adenovirus 55 isolate SNG1218, complete genome	Human adenovirus 55	2005	Singapore
+MN654389.1	2004-12-31	SG	55	Human adenovirus 55 isolate SNG1223, complete genome	Human adenovirus 55	2005	Singapore
+MN654391.1	2004-12-31	EG	55	Human adenovirus 55 isolate NAMRU3 2005-908017, complete genome	Human adenovirus 55	2005	Egypt
+MN654392.1	1996-12-31	US	55	Human adenovirus 55 isolate CDC97026382, complete genome	Human adenovirus 55	1997	USA
+MN654393.1	2011-12-31	JP	55	Human adenovirus 55 isolate WPAFB415, complete genome	Human adenovirus 55	2012	Japan
+MN654394.1	1975-12-31	US	55	Human adenovirus 55 isolate CADOH VRDL 76-0669, complete genome	Human adenovirus 55	1976	USA
+MN654395.1	1968-12-31	ES	55	Human adenovirus 55 isolate HAdV-11/14 strain 273, complete genome	Human adenovirus 55	1969	Spain
+MN654376.1	2008-12-31	KR	55	Human adenovirus 55 isolate WPAFB75, complete genome	Human adenovirus 55	2009	South Korea
+MN654375.1	2008-12-31	KR	55	Human adenovirus 55 isolate WPAFB69, complete genome	Human adenovirus 55	2009	South Korea
+MN654390.1	2004-12-31	EG	55	Human adenovirus 55 isolate NAMRU3 2005-909685, complete genome	Human adenovirus 55	2005	Egypt
+MT806170.1	2019-04-30	CN	55	Human adenovirus 55 strain HB107/CHN/2019, complete genome	Human adenovirus 55	May-2019	China
+MT806171.1	2019-04-30	CN	55	Human adenovirus 55 strain HB111/CHN/2019, complete genome	Human adenovirus 55	May-2019	China
+MT806173.1	2019-04-30	CN	55	Human adenovirus 55 strain HB203/CHN/2019, complete genome	Human adenovirus 55	May-2019	China
+MT806175.1	2019-04-30	CN	55	Human adenovirus 55 strain HB208/CHN/2019, complete genome	Human adenovirus 55	May-2019	China
+MT806174.1	2019-04-30	CN	55	Human adenovirus 55 strain HB204/CHN/2019, complete genome	Human adenovirus 55	May-2019	China
+MT806172.1	2019-04-30	CN	55	Human adenovirus 55 strain HB201/CHN/2019, complete genome	Human adenovirus 55	May-2019	China
+JX423385.1	2001-04-30	EG	55	Human adenovirus B strain human/EGY/ak37_AdV11a/2001/55[P14H11F14], complete genome	Human mastadenovirus B	01-May-2001	Egypt
+JX423384.1	2004-12-31	AR	55	Human adenovirus B strain human/ARG/ak36_AdV11a/2005/55[P14H11F14], complete genome	Human mastadenovirus B	01-Jan-2005	Argentina
+MK883606.1	2012-02-27	CN	55	Human mastadenovirus B isolate Human/China/Shanghai/3961/2012/55[P14H11F14], complete genome	Human mastadenovirus B	28-Feb-2012	China

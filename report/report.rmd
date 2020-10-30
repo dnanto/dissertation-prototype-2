@@ -1,0 +1,52 @@
+---
+output: html_document
+params:
+  meta: ../data/B55/meta.tsv
+  root: ../results/B55
+---
+
+```{r}
+library(ape)
+library(tidyverse)
+library(lubridate)
+library(BactDating)
+set.seed(7080)
+```
+
+```{r}
+meta <- read_tsv(params$meta, col_types = cols(.default = "c"))
+alen<- ncol(read.dna(file.path(params$root, "msa.fasta"), format = "fasta", as.character = T))
+```
+
+```{r}
+phy <- file.path(params$root, "gub") %>% loadGubbins()
+phy$tip.date <- decimal_date(ymd(str_split_fixed(phy$tip.label, "_", 3)[,2]))
+phy <- initRoot(phy, phy$tip.date)
+```
+
+```{r, fig.width=10, fig.height=4}
+roottotip(phy, phy$tip.date)
+```
+
+```{r}
+#TODO: add cache
+model <- c("poisson", "negbin", "strictgamma", "relaxedgamma", "mixedgamma", "arc", "carc", "mixedcarc")
+result <- bactdate(phy, phy$tip.date, nbIts = 250000, thin = 100, model = "relaxedgamma")
+```
+
+```{r, fig.width=10, fig.height=4}
+plot(result, "trace")
+```
+
+```{r}
+coda::effectiveSize(as.mcmc.resBactDating(result))
+```
+
+```{r, fig.width=10, fig.height=6}
+plot(result, "treeCI")
+```
+
+```{r}
+with(result, record[max(1, round(nrow(record) * 0.50)):nrow(record), "mu"]) %>% median() / alen
+```
+
