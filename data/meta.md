@@ -1,4 +1,0 @@
-- viruses.csv
-- Genome Assembly and Annotation report (321)
-- 10/29/2020
-- https://www.ncbi.nlm.nih.gov/genome/browse/#!/viruses/10280/

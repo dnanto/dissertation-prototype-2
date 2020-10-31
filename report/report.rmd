@@ -1,11 +1,25 @@
 ---
 output: html_document
 params:
-  meta: ../data/B55/meta.tsv
-  root: ../results/B55
+  meta: ../data/B55/pol/meta.tsv
+  root: ../results/B55/pol
+  reps: 3
+  iter: 250000
+  thin: 10
+  burn: 0.50
+  mods:
+    - poisson
+    - negbin
+    - strictgamma
+    - relaxedgamma
+    - mixedgamma
+    - arc
+    - carc
+    - mixedcarc
+  ncpu: !r parallel::detectCores()
 ---
 
-```{r}
+```{r setup, include=FALSE}
 library(ape)
 library(tidyverse)
 library(lubridate)
@@ -15,13 +29,13 @@ set.seed(7080)
 
 ```{r}
 meta <- read_tsv(params$meta, col_types = cols(.default = "c"))
-alen<- ncol(read.dna(file.path(params$root, "msa.fasta"), format = "fasta", as.character = T))
+alen <- ncol(read.dna(file.path(params$root, "msa.fasta"), format = "fasta", as.character = T))
 ```
 
 ```{r}
 phy <- file.path(params$root, "gub") %>% loadGubbins()
-phy$tip.date <- decimal_date(ymd(str_split_fixed(phy$tip.label, "_", 3)[,2]))
-phy <- initRoot(phy, phy$tip.date)
+phy$tip.date <- decimal_date(ymd(str_split_fixed(phy$tip.label, "_", 3)[, 2]))
+phy <- initRoot(phy, phy$tip.date, useRec = T)
 ```
 
 ```{r, fig.width=10, fig.height=4}
@@ -29,24 +43,67 @@ roottotip(phy, phy$tip.date)
 ```
 
 ```{r}
-#TODO: add cache
-model <- c("poisson", "negbin", "strictgamma", "relaxedgamma", "mixedgamma", "arc", "carc", "mixedcarc")
-result <- bactdate(phy, phy$tip.date, nbIts = 250000, thin = 100, model = "relaxedgamma")
+subroot <- file.path(params$root, "bactdate")
+dir.create(subroot, showWarnings = F)
+with(
+  expand.grid(mod = params$mods, rep = 1:params$reps),
+  parallel::mcmapply(function(rep, mod) {
+    path <- file.path(subroot, paste0(mod, "-", rep, ".qs"))
+    if (!file.exists(path)) {
+      run <- bactdate(phy, phy$tip.date, nbIts = params$iter, thin = params$thin, model = mod, useRec = T)
+      qs::qsave(run, path)
+    }
+    path
+  }, mod = mod, rep = rep, mc.cores = params$ncpu)
+)
+```
+
+```{r}
+runs <- 
+  list.files(subroot, pattern = "\\.qs$", full.names = T) %>%
+  lapply(function(path) {
+    run <- qs::qread(path, nthreads = params$ncpu)
+    key <- c("likelihood", "mu", "sigma", "alpha", "prior")
+    rec <- with(run, record[max(1, round(nrow(record) * params$burn)):nrow(record), key])
+    est <-
+      apply(rec[, key], 2, summary) %>%
+      t() %>%
+      apply(1, function(row) sprintf("%.2e [%.2e;%.2e]", row["Median"], row["1st Qu."], row["3rd Qu."])) %>%
+      setNames(paste0("est.", key))
+    ess <- setNames(coda::effectiveSize(rec), paste0("ess.", key))
+    basename(path) %>%
+      tools::file_path_sans_ext() %>%
+      str_split_fixed("-", 2) %>%
+      setNames(c("mod", "rep")) %>%
+      c(path = path, dic = run$dic, rootprob = run$rootprob, rate = median(rec[, "mu"]) / alen, est, ess)
+  }) %>%
+  bind_rows() %>%
+  mutate(
+    rep = as.integer(rep),
+    across(c("dic", "rootprob", "rate"), as.numeric),
+    across(starts_with("ess."), as.numeric)
+  ) %>%
+  arrange(dic) %>%
+  select(path, everything())
+
+run <- 
+  slice_min(runs, n =1, order_by = dic) %>% 
+  pull(path) %>% 
+  qs::qread(nthreads = params$ncpu)
+```
+
+```{r}
+runs
 ```
 
 ```{r, fig.width=10, fig.height=4}
-plot(result, "trace")
-```
-
-```{r}
-coda::effectiveSize(as.mcmc.resBactDating(result))
+plot(run, "trace")
 ```
 
 ```{r, fig.width=10, fig.height=6}
-plot(result, "treeCI")
+plot(run, "treeCI")
 ```
 
-```{r}
-with(result, record[max(1, round(nrow(record) * 0.50)):nrow(record), "mu"]) %>% median() / alen
+```{r, fig.width=10, fig.height=6}
+plot(run, "scatter")
 ```
-

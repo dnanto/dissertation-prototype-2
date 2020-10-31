@@ -26,7 +26,7 @@ rule header:
     """
     awk \
       -F "\t" -v OFS="\t" \
-      'NR > 1 && $2 != "?" {{ printf "s/>%s/>%s_%s_%s/\\n", $1, $1, $2, $3; }}' \
+      'NR > 1 {{ printf "s/>%s/>%s_%s_%s/\\n", $1, $1, $2, $3; }}' \
       {input:q} > {output:q}
     """
 

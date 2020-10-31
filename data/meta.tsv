@@ -1,322 +1,605 @@
-accver	date	cc	type	title	organism	collection_date	country
-DQ086466.1	?	?	3	Human adenovirus type 3, complete genome	Human adenovirus B3	?	?
-KX384958.1	2002-12-08	US	3	Human adenovirus B3 strain T382/Ft Jackson South Carolina USA/2002, complete genome	Human adenovirus B3	09-Dec-2002	USA: Fort Jackson, SC
-AY599836.1	?	US	3	Human adenovirus type 3 strain NHRC 1276, complete genome	Human adenovirus B3	?	USA: Illinois, NTC Great Lakes
-AY599834.1	?	?	3	Human adenovirus type 3 strain GB, complete genome	Human adenovirus B3	?	?
-KF268202.1	?	US	3	Human adenovirus B strain human/USA/MEEI_00075/X/3[P3H3F3], complete genome	Human mastadenovirus B	?	USA
-JX423382.1	2007-12-31	US	3	Human adenovirus B strain human/USA/ak34_AdV3a2/2008/3[P3H3F3], complete genome	Human mastadenovirus B	01-Jan-2008	USA: Philadelphia
-JX423381.1	2002-12-31	US	3	Human adenovirus B strain human/USA/ak33_AdV3a/2003/3[P3H3F3], complete genome	Human mastadenovirus B	01-Jan-2003	USA: Philadelphia
-JX423380.1	2004-06-30	US	3	Human adenovirus B strain human/USA/ak32_AdV3a/2004/3[P3H3F3], complete genome	Human mastadenovirus B	01-Jul-2004	USA: San Diego
-KF268133.1	2007-01-31	US	3	Human adenovirus B strain human/USA/UFL_Adv3a50/2007/3[P3H3F3], complete genome	Human mastadenovirus B	Feb-2007	USA: Connecticut
-KF268131.1	2007-01-31	US	3	Human adenovirus B strain human/USA/UFL_Adv3a17/2007/3[P3H3F3], complete genome	Human mastadenovirus B	Feb-2007	USA: Connecticut
-KF268128.1	1987-12-31	US	3	Human adenovirus B strain human/USA/CL_46/1988/3[P3H3F3], complete genome	Human mastadenovirus B	1988	USA: Pittsburgh, Pennsylvania
-KF268123.1	2006-12-31	US	3	Human adenovirus B strain human/USA/UFL_Adv3a51/2007/3[P3H3F3], complete genome	Human mastadenovirus B	Jan-2007	USA: Connecticut
-KF268120.1	2007-01-31	US	3	Human adenovirus B strain human/USA/UFL_Adv3a2/2007/3[P3H3F3], complete genome	Human mastadenovirus B	Feb-2007	USA: Connecticut
-MK813914.1	2009-06-18	CN	3	Human mastadenovirus B isolate human/China/Shanghai/381/2004/3[P3H3F3], complete genome	Human mastadenovirus B	19-Jun-2009	China
-MK813915.1	2009-06-25	CN	3	Human mastadenovirus B isolate human/China/Shanghai/538/2009/3[P3H3F3], complete genome	Human mastadenovirus B	26-Jun-2009	China
-MK836308.1	2009-06-29	CN	3	Human mastadenovirus B isolate human/China/Shanghai/678/2009/3[P3H3F3], complete genome	Human mastadenovirus B	30-Jun-2009	China
-MK836310.1	2009-10-29	CN	3	Human mastadenovirus B isolate human/China/Shanghai/1631/2009/3[P3H3F3], complete genome	Human mastadenovirus B	30-Oct-2009	China
-MK836311.1	2009-12-23	CN	3	Human mastadenovirus B isolate Human/China/Shanghai/3096/2009/3[P3H3F3], complete genome	Human mastadenovirus B	24-Dec-2009	China
-MK883603.1	2011-08-11	CN	3	Human mastadenovirus B isolate Human/China/Shanghai/3517/2011/3[P3H3F3], complete genome	Human mastadenovirus B	12-Aug-2011	China
-MK883604.1	2011-10-24	CN	3	Human mastadenovirus B isolate Human/China/Shanghai/3754/2011/3[P3H3F3], complete genome	Human mastadenovirus B	25-Oct-2011	China
-MK883608.1	2012-03-12	CN	3	Human mastadenovirus B isolate Human/China/Shanghai/4010/2012/3[P3H3F3], complete genome	Human mastadenovirus B	13-Mar-2012	China
-MK847517.1	2011-08-11	CN	3	Human mastadenovirus B isolate Human/China/Shanghai/3496/3[P3H3F3]/2009, complete genome	Human mastadenovirus B	12-Aug-2011	China
-KF268195.1	2004-09-30	US	3	Human adenovirus B strain human/USA/UFL_Adv3/2004/3[P3/H3/F3], partial genome	Human mastadenovirus B	Oct-2004	USA: Missouri
-KY320276.1	?	KR	3	Human mastadenovirus B isolate KUMC-62, complete genome	Human mastadenovirus B	?	South Korea
-DQ099432.4	2004-12-31	?	3	Human adenovirus B strain Guangzhou01, complete genome	Human mastadenovirus B	Jan-2005	?
-DQ105654.4	2004-06-30	?	3	Human adenovirus B strain Guangzhou02, complete genome	Human mastadenovirus B	Jul-2004	?
-AC_000018.1	?	?	7	Human adenovirus type 7, complete genome	Human adenovirus 7	?	?
-MH910669.1	?	US	7	Human adenovirus 7 strain HAdV-B/USA/55142/1960s, complete genome	Human adenovirus 7	?	USA
-MH697607.1	2017-08-09	US	7	Human adenovirus 7 strain HAdV-B/USA_PA/5803/2017/P7H7F7, complete genome	Human adenovirus 7	10-Aug-2017	USA
-MH697606.1	2017-08-08	US	7	Human adenovirus 7 strain HAdV-B/USA_VA/5801/2017/P7H7F7, complete genome	Human adenovirus 7	09-Aug-2017	USA
-MH697605.1	2017-08-01	US	7	Human adenovirus 7 strain HAdV-B/USA_VA/5677/2017/P7H7F7, complete genome	Human adenovirus 7	02-Aug-2017	USA
-MH697604.1	2017-07-29	US	7	Human adenovirus 7 strain HAdV-B/USA_VA/1404/2017/P7H7F7, complete genome	Human adenovirus 7	30-Jul-2017	USA
-MH697603.1	2017-07-24	US	7	Human adenovirus 7 strain HAdV-B/USA_VA/1403/2017/P7H7F7, complete genome	Human adenovirus 7	25-Jul-2017	USA
-MH697602.1	2017-08-10	US	7	Human adenovirus 7 strain HAdV-B/USA_VA/5799/2017/P7H7F7, complete genome	Human adenovirus 7	11-Aug-2017	USA
-MH697601.1	2017-08-02	US	7	Human adenovirus 7 strain HAdV-B/USA_VA/5682/2017/P7H7F7, complete genome	Human adenovirus 7	03-Aug-2017	USA
-MH697600.1	2017-07-31	US	7	Human adenovirus 7 strain HAdV-B/USA_VA/5675/2017/P7H7F7, complete genome	Human adenovirus 7	01-Aug-2017	USA
-MH355567.1	2017-12-31	CN	7	Human adenovirus 7 strain BJ/CHN/2018, complete genome	Human adenovirus 7	01-Jan-2018	China
-MH262326.1	2017-01-10	US	7	Human adenovirus 7 strain HAdV-B/USA_PA/1201/2017/P7H7F7, complete genome	Human adenovirus 7	11-Jan-2017	USA
-MH262325.1	2017-01-09	US	7	Human adenovirus 7 strain HAdV-B/USA_PA/1200/2017/P7H7F7, complete genome	Human adenovirus 7	10-Jan-2017	USA
-MH262324.1	2017-02-08	US	7	Human adenovirus 7 strain HAdV-B/USA_NJ/6296/2017/P7H7F7, complete genome	Human adenovirus 7	09-Feb-2017	USA
-MH262323.1	2017-02-15	US	7	Human adenovirus 7 strain HAdV-B/USA_NJ/6295/2017/P7H7F7, complete genome	Human adenovirus 7	16-Feb-2017	USA
-MH262322.1	2017-02-14	US	7	Human adenovirus 7 strain HAdV-B/USA_NJ/6294/2017/P7H7F7, complete genome	Human adenovirus 7	15-Feb-2017	USA
-MH262321.1	2016-12-18	US	7	Human adenovirus 7 strain HAdV-B/USA_NJ/5649/2016/P7H7F7, complete genome	Human adenovirus 7	19-Dec-2016	USA
-MH262320.1	2016-12-13	US	7	Human adenovirus 7 strain HAdV-B/USA_NJ/5646/2016/P7H7F7, complete genome	Human adenovirus 7	14-Dec-2016	USA
-MH262319.1	2016-12-13	US	7	Human adenovirus 7 strain HAdV-B/USA_NJ/5645/2016/P7H7F7, complete genome	Human adenovirus 7	14-Dec-2016	USA
-MH262318.1	2016-12-11	US	7	Human adenovirus 7 strain HAdV-B/USA_NJ/5644/2016/P7H7F7, complete genome	Human adenovirus 7	12-Dec-2016	USA
-MG736304.1	2017-04-29	CN	7	Human adenovirus 7 isolate X10s, complete genome	Human adenovirus 7	30-Apr-2017	China
-MG736303.1	2017-04-27	CN	7	Human adenovirus 7 isolate X07s, complete genome	Human adenovirus 7	28-Apr-2017	China
-MG696149.1	?	CN	7	Human adenovirus 7 isolate X27, complete genome	Human adenovirus 7	?	China
-MG696148.1	?	CN	7	Human adenovirus 7 isolate X26, complete genome	Human adenovirus 7	?	China
-MG696147.1	?	CN	7	Human adenovirus 7 isolate X25, complete genome	Human adenovirus 7	?	China
-MG696146.1	?	CN	7	Human adenovirus 7 isolate X24, complete genome	Human adenovirus 7	?	China
-MG696145.1	?	CN	7	Human adenovirus 7 isolate X23, complete genome	Human adenovirus 7	?	China
-MG696144.1	?	CN	7	Human adenovirus 7 isolate X22, complete genome	Human adenovirus 7	?	China
-MG696143.1	?	CN	7	Human adenovirus 7 isolate X21, complete genome	Human adenovirus 7	?	China
-MG696142.1	?	CN	7	Human adenovirus 7 isolate X20, complete genome	Human adenovirus 7	?	China
-MG696141.1	?	CN	7	Human adenovirus 7 isolate X19, complete genome	Human adenovirus 7	?	China
-MG696140.1	?	CN	7	Human adenovirus 7 isolate X17, complete genome	Human adenovirus 7	?	China
-MG696139.1	?	CN	7	Human adenovirus 7 isolate X16, complete genome	Human adenovirus 7	?	China
-MG696138.1	?	CN	7	Human adenovirus 7 isolate X13, complete genome	Human adenovirus 7	?	China
-MG696137.1	?	CN	7	Human adenovirus 7 isolate X12, complete genome	Human adenovirus 7	?	China
-MG696136.1	?	CN	7	Human adenovirus 7 isolate X10, complete genome	Human adenovirus 7	?	China
-MG696135.1	?	CN	7	Human adenovirus 7 isolate X09, complete genome	Human adenovirus 7	?	China
-MG696134.1	?	CN	7	Human adenovirus 7 isolate X07, complete genome	Human adenovirus 7	?	China
-MG696133.1	?	CN	7	Human adenovirus 7 isolate X06, complete genome	Human adenovirus 7	?	China
-MG696132.1	?	CN	7	Human adenovirus 7 isolate X05, complete genome	Human adenovirus 7	?	China
-MG696131.1	?	CN	7	Human adenovirus 7 isolate X04, complete genome	Human adenovirus 7	?	China
-MG696130.1	?	CN	7	Human adenovirus 7 isolate X03, complete genome	Human adenovirus 7	?	China
-MG696129.1	?	CN	7	Human adenovirus 7 isolate X02, complete genome	Human adenovirus 7	?	China
-MG696128.1	?	CN	7	Human adenovirus 7 isolate X01, complete genome	Human adenovirus 7	?	China
-MG923582.1	2013-09-15	RU	7	Human adenovirus 7 strain hAdV/Saint-Petersburg/43/2013, complete genome	Human adenovirus 7	16-Sep-2013	Russia: Saint Petersburg
-MG923581.1	2013-09-27	RU	7	Human adenovirus 7 strain hAdV/Saint-Petersburg/40/2013, partial genome	Human adenovirus 7	28-Sep-2013	Russia: Saint Petersburg
-KP670856.2	2011-05-11	CN	7	Human adenovirus 7 strain human/CHN/GZ6965/2011/7[P7H7F7], complete genome	Human adenovirus 7	12-May-2011	China
-KP670855.2	2011-07-07	CN	7	Human adenovirus 7 strain human/CHN/GZ7015/2011/7[P7H7F7], complete genome	Human adenovirus 7	08-Jul-2011	China
-KP670861.1	2011-08-07	CN	7	Human adenovirus 7 strain human/CHN/GZ7052/2011/7[P7H7F7], complete genome	Human adenovirus 7	08-Aug-2011	China
-KP670860.1	2012-04-25	CN	7	Human adenovirus 7 strain human/CHN/GZ8546/2012/7[P7H7F7], complete genome	Human adenovirus 7	26-Apr-2012	China
-KP670859.1	2012-08-03	CN	7	Human adenovirus 7 strain human/CHN/GZ8987/2012/7[P7H7F7], complete genome	Human adenovirus 7	04-Aug-2012	China
-KP670858.1	2010-07-19	CN	7	Human adenovirus 7 strain human/CHN/GZ6080/2010/7[P7H7F7], complete genome	Human adenovirus 7	20-Jul-2010	China
-KP670857.1	2011-03-08	CN	7	Human adenovirus 7 strain human/CHN/GZ6784/2011/7[P7H7F7], complete genome	Human adenovirus 7	09-Mar-2011	China
-KP896481.1	2013-01-17	CN	7	Human adenovirus 7 strain Hubei/XF/2013, complete genome	Human adenovirus 7	18-Jan-2013	China
-KP896480.1	2013-01-18	CN	7	Human adenovirus 7 strain Shanxi/TY01/2013, complete genome	Human adenovirus 7	19-Jan-2013	China
-KP896479.1	2013-02-24	CN	7	Human adenovirus 7 strain Hubei/JZ01/2013, complete genome	Human adenovirus 7	25-Feb-2013	China
-KX897164.1	2014-12-31	CN	7	Human adenovirus 7 isolate Z9/WH/CHN/2015 complete genome, complete genome	Human adenovirus 7	2015	China
-KU361344.1	2014-03-18	RU	7	Human adenovirus 7 strain 19BOVLB/Volgograd/Rus/2014, complete genome	Human adenovirus 7	19-Mar-2014	Russia: Volgograd province
-KT963081.1	2014-02-18	US	7	Human adenovirus 7 strain CDC 2014012.949, complete genome	Human adenovirus 7	19-Feb-2014	USA: Oregon
-KJ019879.1	2012-12-31	CN	7	Human adenovirus 7 strain XY6/XY/CHN/2013, complete genome	Human adenovirus 7	2013	China
-KJ019888.1	2011-12-31	CN	7	Human adenovirus 7 strain L14/XY/CHN/2012, complete genome	Human adenovirus 7	2012	China
-KJ019887.1	2012-12-31	CN	7	Human adenovirus 7 strain JM11/JM/CHN/2013, complete genome	Human adenovirus 7	2013	China
-KJ019886.1	2012-12-31	CN	7	Human adenovirus 7 strain H18/JM/CHN/2013, complete genome	Human adenovirus 7	2013	China
-KJ019885.1	2011-12-31	CN	7	Human adenovirus 7 strain H12/JM/CHN/2012, complete genome	Human adenovirus 7	2012	China
-KJ019884.1	2011-12-31	CN	7	Human adenovirus 7 strain CDC228/JM/CHN/2012, complete genome	Human adenovirus 7	2012	China
-KJ019883.1	2012-12-31	CN	7	Human adenovirus 7 strain K22/JM/CHN/2013, complete genome	Human adenovirus 7	2013	China
-KJ019882.1	2011-12-31	CN	7	Human adenovirus 7 strain K57/JM/CHN/2012, complete genome	Human adenovirus 7	2012	China
-KJ019881.1	2011-12-31	CN	7	Human adenovirus 7 strain L34/XY/CHN/2012, complete genome	Human adenovirus 7	2012	China
-KJ019880.1	2011-12-31	CN	7	Human adenovirus 7 strain XY1/XY/CHN/2012, complete genome	Human adenovirus 7	2012	China
-KC440171.1	2011-03-05	CN	7	Human adenovirus 7 strain human/CHN/DG01/2011/7[P7H7F7], complete genome	Human adenovirus 7	06-Mar-2011	China
-KC857700.1	2012-01-24	CN	7	Human adenovirus 7 strain HAdV B7 XZ2011-93, complete genome	Human adenovirus 7	25-Jan-2012	China
-JF800905.1	2009-01-07	CN	7	Human adenovirus 7 strain 0901HZ/ShX/CHN/2009, complete genome	Human adenovirus 7	08-Jan-2009	China: Shaanxi Province
-JX625134.1	2010-10-31	CN	7	Human adenovirus 7 isolate CQ1198, complete genome	Human adenovirus 7	Nov-2010	China
-GQ478341.1	2008-01-31	CN	7	Human adenovirus 7 strain GZ08, complete genome	Human adenovirus 7	01-Feb-2008	China
-HQ659699.1	2007-10-31	CN	7	Human adenovirus 7 strain gz07, complete genome	Human adenovirus 7	Nov-2007	China
-AY594256.1	?	?	7	Human adenovirus type 7 vaccine strain, complete genome	Human adenovirus 7	?	?
-AY495969.1	?	CN	7	Human adenovirus type 7 vaccine strain, complete genome	Human adenovirus 7	?	China
-AY601634.1	?	US	7	Human adenovirus type 7 strain NHRC 1315, complete genome	Human adenovirus 7	?	USA: Illinois, NTC Great Lakes
-AY594255.1	?	?	7	Human adenovirus type 7 strain Gomen, complete genome	Human adenovirus 7	?	?
-MH910662.1	1954-12-31	US	7	Human adenovirus 7 strain HAdV-B/USA/S 1058/1955, complete genome	Human adenovirus 7	1955	USA: Maryland
-MH910663.1	1996-12-31	US	7	Human adenovirus 7 strain HAdV-B/USA/750/1997, complete genome	Human adenovirus 7	1997	USA: Illinois
-MH910664.1	1996-12-31	US	7	Human adenovirus 7 strain HAdV-B/USA/25-625/1997, complete genome	Human adenovirus 7	1997	USA: Illinois
-MH910665.1	1997-12-31	US	7	Human adenovirus 7 strain HAdV-B/USA/8010/1998, complete genome	Human adenovirus 7	1998	USA: Texas
-MH910666.1	1995-12-31	US	7	Human adenovirus 7 strain HAdV-B/USA/V9368/1996, complete genome	Human adenovirus 7	1996	USA: Georgia
-MH910667.1	1998-12-31	US	7	Human adenovirus 7 strain HAdV-B/USA/R081586/1999, complete genome	Human adenovirus 7	1999	USA: New York
-MH910668.1	1996-12-31	US	7	Human adenovirus 7 strain HAdV-B/USA/6866/1997, complete genome	Human adenovirus 7	1997	USA: South Carolina
-MN135993.1	2017-12-31	CN	7	Human adenovirus 7 strain 163, complete genome	Human adenovirus 7	2018	China
-MN164629.1	2017-12-31	CN	7	Human adenovirus 7 isolate A549, complete genome	Human adenovirus 7	2018	China
-MK492255.1	2014-11-30	US	7	Human adenovirus 7 strain HAdV-B/NW-MM/Illinois/USA/2014/P7H7F7, complete genome	Human adenovirus 7	Dec-2014	USA
-MK492256.1	2014-11-30	US	7	Human adenovirus 7 strain HAdV-B/NW-VM/Illinois/USA/2014/P7H7F7, complete genome	Human adenovirus 7	Dec-2014	USA
-MK492257.1	2017-01-31	US	7	Human adenovirus 7 strain HAdV-B/NW-14993/Illinois/USA/2017/P7H7F7, complete genome	Human adenovirus 7	Feb-2017	USA
-LC530212.1	2017-12-31	JP	7	Human adenovirus 7 293 DNA, complete genome	Human adenovirus 7	2018	Japan:Sendai
-JN860677.1	2008-12-31	US	7	Human adenovirus 7d2 strain FS2154, complete genome	Human adenovirus 7d2	2009	USA
-KF268316.1	2011-10-07	CN	7	Human adenovirus B strain human/CHN/a238/2011/7[P7H7F7], complete genome	Human mastadenovirus B	08-Oct-2011	China: Guangzhou
-KF268314.1	2011-03-04	CN	7	Human adenovirus B strain human/CHN/DG/2011/7[P7H7F7], complete genome	Human mastadenovirus B	05-Mar-2011	China: Dongguan
-JX423388.1	1997-07-31	US	7	Human adenovirus B strain human/USA/ak40_AdV7b/1997/7[P7H7F7], complete genome	Human mastadenovirus B	01-Aug-1997	USA: Illinios
-JX423387.1	1997-08-31	US	7	Human adenovirus B strain human/USA/ak39_AdV7d2/1997/7[P7H7F7], complete genome	Human mastadenovirus B	01-Sep-1997	USA: Illinios
-JX423386.1	2002-12-31	AR	7	Human adenovirus B strain human/ARG/ak38_AdV7h/2003/7[P7H7F7], complete genome	Human mastadenovirus B	01-Jan-2003	Argentina
-JX423383.1	2006-03-31	US	7	Human adenovirus B strain human/USA/ak35_AdV7d2/2006/7[P7H7F7], complete genome	Human mastadenovirus B	01-Apr-2006	USA: Missouri
-KF268135.1	?	US	7	Human adenovirus B strain human/USA/UFL_Adv7d2-3/unknown/7[P7H7F7], complete genome	Human mastadenovirus B	?	USA: Iowa
-KF268134.1	1987-12-31	US	7	Human adenovirus B strain human/USA/CL_43/1988/7[P7H7F7], complete genome	Human mastadenovirus B	1988	USA: Pittsburgh, Pennsylvania
-KF268125.1	1987-12-31	US	7	Human adenovirus B strain human/USA/CL_44/1988/7[P7H7F7], complete genome	Human mastadenovirus B	1988	USA: Pittsburgh, Pennsylvania
-KF268117.1	?	US	7	Human adenovirus B strain human/USA/UFL_Adv7d2-2/unknown/7[P7H7F7], complete genome	Human mastadenovirus B	?	USA: Iowa
-MK896857.1	2016-01-14	CN	7	Human mastadenovirus B isolate Human/China/Shanghai/8473/2016/7[P7H7F7], complete genome	Human mastadenovirus B	15-Jan-2016	China
-MK836312.1	2011-04-21	CN	7	Human mastadenovirus B isolate Human/China/Shanghai/3418/2011/7[P7H7F7], complete genome	Human mastadenovirus B	22-Apr-2011	China
-MK836313.1	2011-04-25	CN	7	Human mastadenovirus B isolate human/China/Shanghai/3426/2011/7[P7H7F7], complete genome	Human mastadenovirus B	26-Apr-2011	China
-MK883609.1	2013-04-06	CN	7	Human mastadenovirus B isolate Human/China/Shanghai/4746/2013/7[P7H7F7], complete genome	Human mastadenovirus B	07-Apr-2013	China
-MK883612.1	2014-01-12	CN	7	Human mastadenovirus B isolate Human/China/Shanghai/6138/7/2014[P7H7F7], complete genome	Human mastadenovirus B	13-Jan-2014	China
-MK847516.1	2011-06-27	CN	7	UNVERIFIED: Human mastadenovirus B isolate Human/Shanghai/Shanghai/3447/2011/7[P7H7F7], complete genome	Human mastadenovirus B	28-Jun-2011	China
-MK809510.1	2009-06-11	CN	7	UNVERIFIED: Human mastadenovirus B isolate Human/China/Shanghai/190/P7H7F7/2009, complete genome	Human mastadenovirus B	12-Jun-2009	China
-MN531562.1	2014-11-16	HT	7	Human mastadenovirus B strain HAdV 7/Haiti-0707/2014, complete genome	Human mastadenovirus B	17-Nov-2014	Haiti
-AY163756.1	?	?	11	Human adenovirus type 11 strain Ad11p Slobitski, complete genome	Human adenovirus 11	?	?
-AF532578.1	?	?	11	Human adenovirus type 11 strain Slobitski, complete genome	Human adenovirus 11	?	?
-KF268121.1	2005-07-31	US	11	Human adenovirus B strain human/USA/UFL_Adv11/2005/11[P11H11F11], complete genome	Human mastadenovirus B	Aug-2005	USA: Wisconsin
-AY598970.1	?	?	11	Human adenovirus B strain 11p, complete genome	Human mastadenovirus B	?	?
-MF062484.1	2010-09-08	CN	14	Human adenovirus 14 isolate HAdV-B/CHN/GZ02-6161/2010/14[P14H14F14], complete genome	Human adenovirus 14	09-Sep-2010	China
-KP896482.1	2013-01-22	CN	14	Human adenovirus 14 strain Gansu/DH01/2013, complete genome	Human adenovirus 14	23-Jan-2013	China
-JQ824845.1	2010-10-06	CN	14	Human adenovirus 14 isolate HAdV-B/CHN/GZ01/2010/14[P14H14F14], complete genome	Human adenovirus 14	07-Oct-2010	China
-JX892927.2	2012-01-31	CN	14	Human adenovirus 14 isolate CHN 2012, complete genome	Human adenovirus 14	01-Feb-2012	China
-JN032132.1	2011-10-21	CN	14	Human adenovirus 14 strain HAdV14-BJ430/CHN2010, complete genome	Human adenovirus 14	22-Oct-2011	China
-FJ822614.1	2006-12-31	US	14	Human adenovirus 14 isolate Ad14-303600, complete genome	Human adenovirus 14	2007	USA: Lackland, TX
-AY803294.1	?	?	14	Human adenovirus type 14 strain de Wit, complete genome	Human adenovirus 14	?	?
-KY021432.1	2015-05-04	US	14	Human mastadenovirus B isolate HAdV-B/USA_New York/45278/2015/P14H14F14, complete genome	Human mastadenovirus B	05-May-2015	USA
-KY021431.1	2015-02-26	US	14	Human mastadenovirus B isolate HAdV-B/USA_New York/6295/2015/P14H14F14, complete genome	Human mastadenovirus B	27-Feb-2015	USA
-KY021430.1	2015-02-14	US	14	Human mastadenovirus B isolate HAdV-B/USA_New York/5491/2015/P14H14F14, complete genome	Human mastadenovirus B	15-Feb-2015	USA
-KY021429.1	2008-01-27	US	14	Human mastadenovirus B isolate HAdV-B/USA_New York/1224/2008/P14H14F14, complete genome	Human mastadenovirus B	28-Jan-2008	USA
-KY021428.1	2010-12-31	CA	14	Human mastadenovirus B isolate HAdVB/CAN_New Brunswick/VC50585/2011/P14H14F14, complete genome	Human mastadenovirus B	2011	Canada
-KY021427.1	2010-12-31	CA	14	Human mastadenovirus B isolate HAdVB/CAN_New Brunswick/VC5600R/2011/P14H14F14, complete genome	Human mastadenovirus B	2011	Canada
-KY021426.1	2010-12-31	CA	14	Human mastadenovirus B isolate HAdV-B/CAN_New Brunswick/VC5093R/2011/P14H14F14, complete genome	Human mastadenovirus B	2011	Canada
-MH499479.1	?	US	14	Human mastadenovirus B isolate HAdV-B14/South Carolina_NHRC_75650_2017_P14H14F14, partial genome	Human mastadenovirus B	?	USA
-MH669070.1	2006-05-13	US	14	Human mastadenovirus B isolate HAdV-B/USA_New_York/1550/2006/P14H14F14, complete genome	Human mastadenovirus B	14-May-2006	USA
-MH669071.1	2008-12-31	US	14	Human mastadenovirus B isolate HAdV-B/USA_Pennsylvania/VT5079/2009/P14H14F14, complete genome	Human mastadenovirus B	2009	USA
-MH669072.1	2008-12-31	?	14	Human mastadenovirus B isolate HAdV-B/USA_Pennsylvania/VT7536/2009/P14H14F14, complete genome	Human mastadenovirus B	2009	?
-MH669073.1	?	?	14	Human mastadenovirus B isolate HAdV-B/USA_Pennsylvania/VT7603/2009/P14H14F14, complete genome	Human mastadenovirus B	?	?
-MH668280.1	2017-07-24	US	14	Human mastadenovirus B isolate 75658, complete genome	Human mastadenovirus B	25-Jul-2017	USA
-MH668281.1	2017-08-02	US	14	Human mastadenovirus B isolate 75668, complete genome	Human mastadenovirus B	03-Aug-2017	USA
-JN860680.1	?	EG	16	Human adenovirus 16 strain E26, complete genome	Human adenovirus 16	?	Egypt
-AY601636.1	?	?	16	Human adenovirus type 16 strain ch. 79, complete genome	Human adenovirus 16	?	?
-MF502426.1	2016-03-31	US	21	Human adenovirus 21 isolate OHT-006, complete genome	Human adenovirus 21	Apr-2016	USA
-KJ364592.1	1997-12-31	US	21	Human adenovirus 21 strain VRDL T98-1269, complete genome	Human adenovirus 21	1998	USA: CA
-KJ364591.1	1986-12-31	US	21	Human adenovirus 21 strain VRDL T87-0342, complete genome	Human adenovirus 21	1987	USA: CA
-KJ364590.1	2006-12-31	US	21	Human adenovirus 21 strain NHRC 91447, complete genome	Human adenovirus 21	2007	USA: CGTC Cape May, NJ
-KJ364589.1	1996-12-31	US	21	Human adenovirus 21 strain VRDL T97-1745, complete genome	Human adenovirus 21	1997	USA: CA
-KJ364588.1	1987-12-31	US	21	Human adenovirus 21 strain CDC V2148A, complete genome	Human adenovirus 21	1988	USA: CT
-KJ364587.1	2004-12-31	?	21	Human adenovirus 21 strain PEL0066, complete genome	Human adenovirus 21	2005	?
-KJ364586.1	1997-12-31	US	21	Human adenovirus 21 strain NHRC 10030, complete genome	Human adenovirus 21	1998	USA: NRTC Great Lakes, IL
-KJ364585.1	2004-12-31	US	21	Human adenovirus 21 strain NHRC 71252, complete genome	Human adenovirus 21	2005	USA: MCRD Parris Island, SC
-KJ364584.1	2004-12-31	US	21	Human adenovirus 21 strain NHRC 71227, complete genome	Human adenovirus 21	2005	USA: MCRD Parris Island, SC
-KJ364583.1	2003-12-31	US	21	Human adenovirus 21 strain NHRC 71139, complete genome	Human adenovirus 21	2004	USA: MCRD Parris Island, SC
-KJ364582.1	2006-12-31	US	21	Human adenovirus 21 strain NHRC 64589, complete genome	Human adenovirus 21	2007	USA: Ft Benning, GA
-KJ364581.1	2005-12-31	US	21	Human adenovirus 21 strain NHRC 52331, complete genome	Human adenovirus 21	2006	USA: Lackland AFB, TX
-KJ364580.1	1997-12-31	US	21	Human adenovirus 21 strain NHRC 20007, complete genome	Human adenovirus 21	1998	USA: MCRD San Diego, CA
-KJ364579.1	1983-12-31	US	21	Human adenovirus 21 strain CDC V1375E, complete genome	Human adenovirus 21	1984	USA: UT
-KJ364578.1	1995-12-31	US	21	Human adenovirus 21 strain NHRC 5, complete genome	Human adenovirus 21	1996	USA: NRTC Great Lakes, IL
-KJ364577.1	1977-12-31	US	21	Human adenovirus 21 strain CDC RU8176, complete genome	Human adenovirus 21	1978	USA: TN
-KJ364576.1	2005-12-31	US	21	Human adenovirus 21 strain NHRC 44288, complete genome	Human adenovirus 21	2006	USA: FT Jackson, SC
-KJ364575.1	2005-12-31	US	21	Human adenovirus 21 strain NHRC 63218, complete genome	Human adenovirus 21	2006	USA: FT Benning, GA
-KJ364574.1	2004-12-31	US	21	Human adenovirus 21 strain NHRC 32493, complete genome	Human adenovirus 21	2005	USA: FT Leonard Wood, MO
-KJ364573.1	2004-12-31	US	21	Human adenovirus 21 strain NHRC 32389, complete genome	Human adenovirus 21	2005	USA: FT Leonard Wood, MO
-KF528688.1	?	DE	21	Human adenovirus 21, complete genome	Human adenovirus 21	?	Germany
-AY601633.1	?	?	21	Human adenovirus type 21 strain AV-1645, complete genome	Human adenovirus 21	?	?
-KY307860.1	1996-12-31	MY	21	Human adenovirus 21a isolate Sibu-97, complete genome	Human adenovirus 21a	1997	Malaysia: Sarawak
-KY307859.1	2015-12-31	CH	21	Human adenovirus 21a isolate LRTI-9, complete genome	Human adenovirus 21a	2016	Switzerland: Bern
-KY307858.1	2015-12-31	DE	21	Human adenovirus 21a isolate LRTI-8, complete genome	Human adenovirus 21a	2016	Germany
-KY307857.1	2012-12-31	CH	21	Human adenovirus 21a isolate LRTI-7, complete genome	Human adenovirus 21a	2013	Switzerland: Bern
-KF577599.1	2005-04-30	DE	21	Human adenovirus 21a isolate LRTI-1, complete genome	Human adenovirus 21a	May-2005	Germany
-KF938576.1	2012-04-30	DE	21	Human adenovirus 21a isolate LRTI-4, complete genome	Human adenovirus 21a	May-2012	Germany
-KF938575.1	2012-04-30	DE	21	Human adenovirus 21a isolate LRTI-4, complete genome	Human adenovirus 21a	May-2012	Germany
-KF802426.1	2008-07-31	DE	21	Human adenovirus 21a isolate LRTI-2, complete genome	Human adenovirus 21a	Aug-2008	Germany
-KF802425.1	2012-10-31	DE	21	Human adenovirus 21a isolate LRTI-5, complete genome	Human adenovirus 21a	Nov-2012	Germany
-KF577598.1	2013-01-31	DE	21	Human adenovirus 21a isolate LRTI-6, complete genome	Human adenovirus 21a	Feb-2013	Germany
-KF577597.1	2012-10-31	DE	21	Human adenovirus 21a isolate LRTI-5, complete genome	Human adenovirus 21a	Nov-2012	Germany
-KF577595.1	2005-04-30	DE	21	Human adenovirus 21a isolate LRTI-1, complete genome	Human adenovirus 21a	May-2005	Germany
-KF577593.1	2010-06-30	DE	21	Human adenovirus 21a isolate LRTI-3, complete genome	Human adenovirus 21a	Jul-2010	Germany
-MN686206.1	2019-02-28	CN	21	Human adenovirus 21a isolate human/CHN/BB/201903/21, complete genome	Human adenovirus 21a	Mar-2019	China: Bengbu City
-AY737797.1	?	?	34	Human adenovirus type 34 strain Compton, complete genome	Human adenovirus 34	?	?
-KF268196.1	2005-09-30	US	34	Human adenovirus B strain human/USA/UFL_Adv34/2005/34[P34/H34/F34], complete genome	Human mastadenovirus B	Oct-2005	USA: Texas
-AC_000019.1	?	?	35	Human adenovirus type 35, complete genome	Human adenovirus 35	?	?
-AY271307.1	?	?	35	Human adenovirus type 35 strain 35p, complete genome	Human adenovirus 35	?	?
-AY128640.2	?	?	35	Human adenovirus type 35 strain Holden, complete genome	Human adenovirus 35	?	?
-KF268124.1	2004-11-30	US	35	Human adenovirus B strain human/USA/UFL_Adv35/2004/35[P35H35F35], complete genome	Human mastadenovirus B	Dec-2004	USA: Iowa
-AY737798.1	?	?	50	Human adenovirus type 50 strain Wan, complete genome	Human adenovirus 50	?	?
-FJ597732.1	2005-05-25	SG	55	Human adenovirus 11a strain SGN1222, complete genome	Human adenovirus 11a	26-May-2005	Singapore
-MK123981.1	2012-12-31	CN	55	Human adenovirus 55 strain TY26, complete genome	Human adenovirus 55	2013	China
-MK123980.1	2012-12-31	CN	55	Human adenovirus 55 strain TY12, complete genome	Human adenovirus 55	2013	China
-MK123979.1	2010-12-31	CN	55	Human adenovirus 55, complete genome	Human adenovirus 55	2011	China
-MK123978.1	2018-05-31	CN	55	Human adenovirus 55 strain 267, complete genome	Human adenovirus 55	Jun-2018	China: Guangzhou
-MH256657.1	2018-03-02	CN	55	UNVERIFIED: Human adenovirus 55 isolate DYN, complete genome	Human adenovirus 55	03-Mar-2018	China
-MH256656.1	2018-02-12	CN	55	UNVERIFIED: Human adenovirus 55 isolate 1806003, complete genome	Human adenovirus 55	13-Feb-2018	China
-MH256655.1	2018-02-12	CN	55	UNVERIFIED: Human adenovirus 55 isolate 1804001, complete genome	Human adenovirus 55	13-Feb-2018	China
-MH256654.1	2018-02-11	CN	55	UNVERIFIED: Human adenovirus 55 isolate 24-2, complete genome	Human adenovirus 55	12-Feb-2018	China
-MH256653.1	2018-02-11	CN	55	UNVERIFIED: Human adenovirus 55 isolate 24-1, complete genome	Human adenovirus 55	12-Feb-2018	China
-KY471323.1	?	KR	55	Human adenovirus 55 strain AFMC 16-0096, complete genome	Human adenovirus 55	?	South Korea
-KY471322.1	?	KR	55	Human adenovirus 55 strain AFMC 16-0035, complete genome	Human adenovirus 55	?	South Korea
-KY471321.1	?	KR	55	Human adenovirus 55 strain AFMC 16-0081, complete genome	Human adenovirus 55	?	South Korea
-KY471320.1	?	KR	55	Human adenovirus 55 strain AFMC 16-0074, complete genome	Human adenovirus 55	?	South Korea
-KY471319.1	?	KR	55	Human adenovirus 55 strain AFMC 16-0094, complete genome	Human adenovirus 55	?	South Korea
-KY471318.1	?	KR	55	Human adenovirus 55 strain AFMC 16-0007, complete genome	Human adenovirus 55	?	South Korea
-KP896484.1	2013-01-14	CN	55	Human adenovirus B55 strain Tianjin/TJ01/2013, complete genome	Human adenovirus 55	15-Jan-2013	China
-KP896483.1	2013-02-24	CN	55	Human adenovirus B55 strain Liaoning/LS01/2013, complete genome	Human adenovirus 55	25-Feb-2013	China
-KP896478.1	2012-02-10	CN	55	Human adenovirus B55 strain Hebei/BD01/2012, complete genome	Human adenovirus 55	11-Feb-2012	China
-KX289874.1	2015-11-11	CN	55	Human adenovirus 55 isolate JS201501, complete genome	Human adenovirus 55	12-Nov-2015	China
-KY070248.1	2016-06-29	CN	55	Human adenovirus 55 isolate 60-GD-2016, complete genome	Human adenovirus 55	30-Jun-2016	China
-KX494979.1	2016-02-22	KR	55	Human adenovirus 55 strain AFMC 16-0011, complete genome	Human adenovirus 55	23-Feb-2016	South Korea
-JX491639.1	2011-03-23	CN	55	Human adenovirus 55 isolate HAdV-B/CHN/BJ01/2011/55[P14H11F14], complete genome	Human adenovirus 55	24-Mar-2011	China
-KP279748.1	2012-04-17	CN	55	Human adenovirus 55 strain human/CHN/AQ-1/2012/55[P14/H11/F14], complete genome	Human adenovirus 55	18-Apr-2012	China
-KC857701.1	2012-04-25	CN	55	Human adenovirus 55 strain HAdV B55 XZ2012-492, complete genome	Human adenovirus 55	26-Apr-2012	China
-KF908851.1	2013-01-13	CN	55	Human adenovirus 55 strain TJ-2013-90, complete genome	Human adenovirus 55	14-Jan-2013	China
-KJ883522.1	2011-12-04	CN	55	Human adenovirus 55 isolate Shanxi/QZ01/2011, complete genome	Human adenovirus 55	05-Dec-2011	China
-KJ883521.1	2013-04-06	CN	55	Human adenovirus 55 isolate Hebei/BD6729/2013, complete genome	Human adenovirus 55	07-Apr-2013	China
-KJ883520.1	2013-04-05	CN	55	Human adenovirus 55 isolate Hebei/BD6728/2013, complete genome	Human adenovirus 55	06-Apr-2013	China
-JX123029.1	2012-01-07	CN	55	Human adenovirus 55 isolate CQ-2903, complete genome	Human adenovirus 55	08-Jan-2012	China
-JX123028.1	2011-04-21	CN	55	Human adenovirus 55 isolate CQ-1657, complete genome	Human adenovirus 55	22-Apr-2011	China
-JX123027.1	2010-08-17	CN	55	Human adenovirus 55 isolate CQ-814, complete genome	Human adenovirus 55	18-Aug-2010	China
-FJ643676.1	2006-03-31	CN	55	Human adenovirus 55 strain QS-DLL, complete genome	Human adenovirus 55	Apr-2006	China: Shanxi, Qishan
-MN052861.1	2018-04-25	CN	55	Human adenovirus 55, complete genome	Human adenovirus 55	26-Apr-2018	China
-MK886831.1	2015-08-30	CN	55	Human adenovirus 55 isolate HAdV-B55/CHN/BJDX01/2015, complete genome	Human adenovirus 55	31-Aug-2015	China
-MT513753.1	2005-12-31	US	55	Human adenovirus 55 isolate CHOP6887, complete genome	Human adenovirus 55	2006	USA
-MN654377.1	2008-12-31	KR	55	Human adenovirus 55 isolate WPAFB48, complete genome	Human adenovirus 55	2009	South Korea
-MN654378.1	2008-12-31	KR	55	Human adenovirus 55 isolate WPAFB25, complete genome	Human adenovirus 55	2009	South Korea
-MN654379.1	2008-12-31	KR	55	Human adenovirus 55 isolate WPAFB24, complete genome	Human adenovirus 55	2009	South Korea
-MN654380.1	1999-12-31	EG	55	Human adenovirus 55 isolate NAMRU3-E3, complete genome	Human adenovirus 55	2000	Egypt
-MN654381.1	1999-12-31	EG	55	Human adenovirus 55 isolate NAMRU3-E4, complete genome	Human adenovirus 55	2000	Egypt
-MN654382.1	2001-12-31	EG	55	Human adenovirus 55 isolate NAMRU3-E66, complete genome	Human adenovirus 55	2002	Egypt
-MN654383.1	1999-12-31	EG	55	Human adenovirus 55 isolate NAMRU3-E72, complete genome	Human adenovirus 55	2000	Egypt
-MN654384.1	2007-12-31	EG	55	Human adenovirus 55 isolate NAMRU3 2008-905223, complete genome	Human adenovirus 55	2008	Egypt
-MN654385.1	1999-12-31	EG	55	Human adenovirus 55 isolate NAMRU3-E6, complete genome	Human adenovirus 55	2000	Egypt
-MN654386.1	2006-12-31	EG	55	Human adenovirus 55 isolate NAMRU3 2007-905716, complete genome	Human adenovirus 55	2007	Egypt
-MN654387.1	2008-12-31	EG	55	Human adenovirus 55 isolate NAMRU3 2009-908968, complete genome	Human adenovirus 55	2009	Egypt
-MN654388.1	2004-12-31	SG	55	Human adenovirus 55 isolate SNG1218, complete genome	Human adenovirus 55	2005	Singapore
-MN654389.1	2004-12-31	SG	55	Human adenovirus 55 isolate SNG1223, complete genome	Human adenovirus 55	2005	Singapore
-MN654391.1	2004-12-31	EG	55	Human adenovirus 55 isolate NAMRU3 2005-908017, complete genome	Human adenovirus 55	2005	Egypt
-MN654392.1	1996-12-31	US	55	Human adenovirus 55 isolate CDC97026382, complete genome	Human adenovirus 55	1997	USA
-MN654393.1	2011-12-31	JP	55	Human adenovirus 55 isolate WPAFB415, complete genome	Human adenovirus 55	2012	Japan
-MN654394.1	1975-12-31	US	55	Human adenovirus 55 isolate CADOH VRDL 76-0669, complete genome	Human adenovirus 55	1976	USA
-MN654395.1	1968-12-31	ES	55	Human adenovirus 55 isolate HAdV-11/14 strain 273, complete genome	Human adenovirus 55	1969	Spain
-MN654376.1	2008-12-31	KR	55	Human adenovirus 55 isolate WPAFB75, complete genome	Human adenovirus 55	2009	South Korea
-MN654375.1	2008-12-31	KR	55	Human adenovirus 55 isolate WPAFB69, complete genome	Human adenovirus 55	2009	South Korea
-MN654390.1	2004-12-31	EG	55	Human adenovirus 55 isolate NAMRU3 2005-909685, complete genome	Human adenovirus 55	2005	Egypt
-MT806170.1	2019-04-30	CN	55	Human adenovirus 55 strain HB107/CHN/2019, complete genome	Human adenovirus 55	May-2019	China
-MT806171.1	2019-04-30	CN	55	Human adenovirus 55 strain HB111/CHN/2019, complete genome	Human adenovirus 55	May-2019	China
-MT806173.1	2019-04-30	CN	55	Human adenovirus 55 strain HB203/CHN/2019, complete genome	Human adenovirus 55	May-2019	China
-MT806175.1	2019-04-30	CN	55	Human adenovirus 55 strain HB208/CHN/2019, complete genome	Human adenovirus 55	May-2019	China
-MT806174.1	2019-04-30	CN	55	Human adenovirus 55 strain HB204/CHN/2019, complete genome	Human adenovirus 55	May-2019	China
-MT806172.1	2019-04-30	CN	55	Human adenovirus 55 strain HB201/CHN/2019, complete genome	Human adenovirus 55	May-2019	China
-JX423385.1	2001-04-30	EG	55	Human adenovirus B strain human/EGY/ak37_AdV11a/2001/55[P14H11F14], complete genome	Human mastadenovirus B	01-May-2001	Egypt
-JX423384.1	2004-12-31	AR	55	Human adenovirus B strain human/ARG/ak36_AdV11a/2005/55[P14H11F14], complete genome	Human mastadenovirus B	01-Jan-2005	Argentina
-MK883606.1	2012-02-27	CN	55	Human mastadenovirus B isolate Human/China/Shanghai/3961/2012/55[P14H11F14], complete genome	Human mastadenovirus B	28-Feb-2012	China
-JN860676.1	1986-12-31	AR	66	Human adenovirus 66 strain 87-922, complete genome	Human adenovirus 66	1987	Argentina
-JN860678.1	2003-12-31	AR	68	Human adenovirus 68 strain Arg 827/04, complete genome	Human adenovirus 68	2004	Argentina
-KF268315.1	1988-04-12	DE	68	Human adenovirus B strain human/DEU/HEIM_00097/1988/NEW[P16H3F16], complete genome	Human mastadenovirus B	13-Apr-1988	Germany
-KF268328.1	1985-01-28	DE	77	Human adenovirus B strain human/DEU/HEIM_00092/1985/NEW[P35H34F7], complete genome	Human mastadenovirus B	29-Jan-1985	Germany
-KT970440.1	2000-08-31	AR	78	Human mastadenovirus B strain HAdV-B/ARG/18017/2000/[P11H11F7], complete genome	Human mastadenovirus B	Sep-2000	Argentina
-KT970442.1	2012-04-14	US	78	Human mastadenovirus B strain HAdV-B/USA/12146/2012/[P11H11F7], complete genome	Human mastadenovirus B	15-Apr-2012	USA: New York
-KT970441.1	2013-09-30	US	78	Human mastadenovirus B strain HAdV-B/USA/CHOP2146-10810/2013/[P11H11F7], complete genome	Human mastadenovirus B	Oct-2013	USA: Pennsylvania
-LC177352.1	2015-01-07	JP	79	Human mastadenovirus B strain HAdV-B/JPN/T150125/2015/79[P11H34F11], complete genome	Human mastadenovirus B	2015-01-08	Japan:Fukuoka, Tatara river
-KF906413.1	2010-08-23	KR		Human adenovirus 11+34 strain IC763, complete genome	Human adenovirus 11+34	24-Aug-2010	South Korea
-EF564601.1	?	?		Human adenovirus 3+11p strain OvAd2, complete genome	Human adenovirus 3+11p	?	?
-EF564600.1	?	US		Human adenovirus 3+11p strain OvAd1, complete genome	Human adenovirus 3+11p	?	USA
-JN860679.1	1957-12-31	JP		Human adenovirus 3+7 strain Takeuchi, complete genome	Human adenovirus 3+7	1958	Japan
-KT069550.1	?	CD		Human mastadenovirus B isolate DRC Kahuzi Gorilla beringei graueri 6759, complete genome	Human mastadenovirus B	?	Democratic Republic of the Congo
-KF633445.1	?	DE		Human adenovirus B strain human/DEU/HEIM_00086/X/X[PXHXFX], complete genome	Human mastadenovirus B	?	Germany
-KF268212.1	2011-04-05	IN		Human adenovirus B strain human/IND/MEEI_00062/2011/3[P7H3F3], complete genome	Human mastadenovirus B	06-Apr-2011	India: Tamil Nadu
-KF268210.1	2011-03-31	IN		Human adenovirus B strain human/IND/MEEI_00057/2011/3[P7H3F3], complete genome	Human mastadenovirus B	Apr-2011	India: Tamil Nadu
-KF268311.1	2006-12-31	CN		Human adenovirus B strain human/CHN/Ad4/2007/NEW[P3H3F7], complete genome	Human mastadenovirus B	01-Jan-2007	China: Guangzhou
-KF268132.1	1987-12-31	US		Human adenovirus B strain human/USA/CL_45/1988/3[P3H7F3], complete genome	Human mastadenovirus B	1988	USA: Pittsburgh, Pennsylvania
-KF268126.1	2005-01-31	US		Human adenovirus B strain human/USA/UFL_Adv7h/2005/66[P7H7F3], complete genome	Human mastadenovirus B	Feb-2005	USA: Iowa
-EF011630.1	?	US		Human adenovirus B strain ColoAd1, complete genome	Human mastadenovirus B	?	USA
-MN011575.1	2014-02-09	CN		Human mastadenovirus B isolate SH6220, complete genome	Human mastadenovirus B	10-Feb-2014	China
-MW013769.1	2020-01-16	CN		Human mastadenovirus B isolate P1, complete genome	Human mastadenovirus B	17-Jan-2020	China: Hunan,Huaihua
-MW013770.1	2020-01-16	CN		Human mastadenovirus B isolate P2, complete genome	Human mastadenovirus B	17-Jan-2020	China: Hunan,Huaihua
-MW013771.1	2020-01-25	CN		Human mastadenovirus B isolate P3, complete genome	Human mastadenovirus B	26-Jan-2020	China: Hunan,Huaihua
-MW013772.1	2020-01-24	CN		Human mastadenovirus B isolate P5, complete genome	Human mastadenovirus B	25-Jan-2020	China: Hunan,Huaihua
-MW013773.1	2020-01-27	CN		Human mastadenovirus B isolate P6, complete genome	Human mastadenovirus B	28-Jan-2020	China: Hunan,Huaihua
-MW013774.1	2020-01-26	CN		Human mastadenovirus B isolate P7, complete genome	Human mastadenovirus B	27-Jan-2020	China: Hunan,Shaoyang
-MW013775.1	2020-01-25	CN		Human mastadenovirus B isolate P8, complete genome	Human mastadenovirus B	26-Jan-2020	China: Hunan,Shaoyang
-MW013776.1	2020-01-28	CN		Human mastadenovirus B isolate P9, complete genome	Human mastadenovirus B	29-Jan-2020	China: Hunan,Shaoyang
-MW013779.1	2020-01-28	CN		Human mastadenovirus B isolate P12, complete genome	Human mastadenovirus B	29-Jan-2020	China: Hunan,Shaoyang
-MW013780.1	2020-01-30	CN		Human mastadenovirus B isolate P13, complete genome	Human mastadenovirus B	31-Jan-2020	China: Hunan,Shaoyang
-MW013778.1	2020-01-28	CN		Human mastadenovirus B isolate P11, complete genome	Human mastadenovirus B	29-Jan-2020	China: Hunan,Shaoyang
-MW013777.1	2020-01-28	CN		Human mastadenovirus B isolate P10, complete genome	Human mastadenovirus B	29-Jan-2020	China: Hunan,Shaoyang
-AC_000010.1	?	?		Simian adenovirus 21, complete genome	Simian adenovirus 21	?	?
-FJ025909.1	?	?		Simian adenovirus 27.1, complete genome	Simian adenovirus 27.1	?	?
-FJ025928.1	?	?		Simian adenovirus 27.2, complete genome	Simian adenovirus 27.2	?	?
-FJ025914.1	?	?		Simian adenovirus 28.1, complete genome	Simian adenovirus 28.1	?	?
-FJ025915.1	?	?		Simian adenovirus 28.2, complete genome	Simian adenovirus 28.2	?	?
-FJ025916.1	?	?		Simian adenovirus 29, complete genome	Simian adenovirus 29	?	?
-FJ025911.1	?	?		Simian adenovirus 32, complete genome	Simian adenovirus 32	?	?
-FJ025908.1	?	?		Simian adenovirus 33, complete genome	Simian adenovirus 33	?	?
-FJ025912.1	?	?		Simian adenovirus 35.1, complete genome	Simian adenovirus 35.1	?	?
-FJ025910.1	?	?		Simian adenovirus 35.2, complete genome	Simian adenovirus 35.2	?	?
-FJ025913.1	?	?		Simian adenovirus 41.1, complete genome	Simian adenovirus 41.1	?	?
-FJ025927.1	?	?		Simian adenovirus 41.2, complete genome	Simian adenovirus 41.2	?	?
-FJ025930.1	?	?		Simian adenovirus 46, complete genome	Simian adenovirus 46	?	?
-FJ025929.1	?	?		Simian adenovirus 47, complete genome	Simian adenovirus 47	?	?
+tag	accver	s. start	s. end	strand	date	country	type
+fib	FJ841914.1	1	978	plus	2000-12-31	TW	55
+fib	KP896483.1	30774	31751	plus	2013-02-24	CN	55
+fib	FJ643676.1	30775	31752	plus	2006-03-31	CN	55
+fib	KY780933.1	30617	31594	plus	2016-05-31	CN	55
+fib	KY002683.1	30774	31751	plus	2016-01-25	CN	55
+fib	L08232.1	1095	2072	plus	?	?	11
+fib	KY002684.1	30774	31751	plus	2016-05-23	CN	55
+fib	KP896478.1	30775	31752	plus	2012-02-10	CN	55
+fib	KY471318.1	30796	31773	plus	2016-02-22	KR	55
+fib	KC510758.1	1	978	plus	2010-12-31	CN	55
+fib	KY471319.1	30793	31770	plus	2016-02-22	KR	55
+fib	KC510759.1	1	978	plus	2010-12-31	CN	55
+fib	KY471320.1	30793	31770	plus	2016-02-22	KR	55
+fib	MK123978.1	30714	31691	plus	2018-05-31	CN	55
+fib	FJ841913.1	1	978	plus	2001-12-31	TW	55
+fib	JX491639.1	30793	31770	plus	2011-03-23	CN	55
+fib	KY471322.1	30796	31773	plus	2016-02-22	KR	55
+fib	KC510762.1	1	978	plus	2010-12-31	CN	55
+fib	KY471323.1	30793	31770	plus	2016-02-22	KR	55
+fib	KF908851.1	30569	31546	plus	2013-01-13	CN	55
+fib	MH256657.1	30590	31567	plus	2018-03-02	CN	55
+fib	KY070257.1	1	978	plus	2016-06-29	CN	55
+fib	KC510751.1	1	978	plus	2010-12-31	CN	55
+fib	MT806170.1	30719	31696	plus	2019-04-30	CN	55
+fib	KY070248.1	30776	31753	plus	2016-06-29	CN	55
+fib	MN654392.1	30784	31761	plus	1996-12-31	US	55
+fib	KY070249.1	1	978	plus	2016-06-29	CN	55
+fib	KP270921.1	1	978	plus	2012-12-31	CN	55
+fib	KY070250.1	1	978	plus	2016-06-29	CN	55
+fib	JX123029.1	30774	31751	plus	2012-01-07	CN	55
+fib	KY511638.1	75	1052	plus	2016-07-04	CN	55
+fib	KC510761.1	1	978	plus	2010-12-31	CN	55
+fib	KY070252.1	1	978	plus	2016-06-29	CN	55
+fib	MT806175.1	30719	31696	plus	2019-04-30	CN	55
+fib	KY070253.1	1	978	plus	2016-06-29	CN	55
+fib	FJ841907.1	1	978	plus	1996-12-31	US	55
+fib	KY070254.1	1	978	plus	2016-06-29	CN	55
+fib	KC510748.1	1	978	plus	2010-12-31	CN	55
+fib	MN654375.1	30792	31769	plus	2008-12-31	KR	55
+fib	KC510749.1	1	978	plus	2010-12-31	CN	55
+fib	KY070256.1	1	978	plus	2016-06-29	CN	55
+fib	KC510750.1	1	978	plus	2010-12-31	CN	55
+fib	KP896482.1	30758	31735	plus	2013-01-22	CN	14
+fib	KC857701.1	30776	31753	plus	2012-04-25	CN	55
+fib	AB162822.1	1	978	plus	?	?	11
+fib	KC510752.1	1	978	plus	2010-12-31	CN	55
+fib	MH256654.1	30590	31567	plus	2018-02-11	CN	55
+fib	KC510753.1	1	978	plus	2010-12-31	CN	55
+fib	MH256655.1	30588	31565	plus	2018-02-12	CN	55
+fib	KC510754.1	1	978	plus	2010-12-31	CN	55
+fib	MK886831.1	30794	31771	plus	2015-08-30	CN	55
+fib	KC510755.1	1	978	plus	2010-12-31	CN	55
+fib	MT806174.1	30719	31696	plus	2019-04-30	CN	55
+fib	MK883606.1	30774	31751	plus	2012-02-27	CN	55
+fib	MT806172.1	30719	31696	plus	2019-04-30	CN	55
+fib	MN654376.1	30792	31769	plus	2008-12-31	KR	55
+fib	MT806173.1	30719	31696	plus	2019-04-30	CN	55
+fib	MT806171.1	30719	31696	plus	2019-04-30	CN	55
+fib	KX289874.1	30775	31752	plus	2015-11-11	CN	55
+fib	KJ883520.1	30773	31750	plus	2013-04-05	CN	55
+fib	MN654379.1	30792	31769	plus	2008-12-31	KR	55
+fib	KC510760.1	1	978	plus	2010-12-31	CN	55
+fib	MN052861.1	30740	31717	plus	2018-04-25	CN	55
+fib	KY471321.1	30793	31770	plus	2016-02-22	KR	55
+fib	KY070258.1	1	978	plus	2016-06-29	CN	55
+fib	KY780932.1	30617	31594	plus	2016-05-31	CN	55
+fib	MH256656.1	30588	31565	plus	2018-02-12	CN	55
+fib	KX494979.1	30796	31773	plus	2016-02-22	KR	55
+fib	KY511637.1	87	1064	plus	2016-06-30	CN	55
+fib	KP279748.1	30774	31751	plus	2012-04-17	CN	55
+fib	MN654378.1	30792	31769	plus	2008-12-31	KR	55
+fib	KY070251.1	1	978	plus	2016-06-29	CN	55
+fib	KT253553.1	1	978	plus	2013-12-31	CN	55
+fib	MN654393.1	30798	31775	plus	2011-12-31	JP	55
+fib	KY511636.1	86	1063	plus	2016-07-07	CN	55
+fib	JX123028.1	30782	31759	plus	2011-04-21	CN	55
+fib	KY780931.1	30617	31594	plus	2016-05-31	CN	55
+fib	FJ841912.1	1	978	plus	2004-12-31	SG	55
+fib	MH256653.1	30589	31566	plus	2018-02-11	CN	55
+fib	MN654377.1	30792	31769	plus	2008-12-31	KR	55
+fib	KY070255.1	1	978	plus	2016-06-29	CN	55
+fib	KC510756.1	1	978	plus	2010-12-31	CN	55
+fib	FJ597732.1	30795	31772	plus	2005-05-25	SG	55
+fib	FJ603104.2	1	978	plus	2004-12-31	SG	55
+fib	MN654386.1	30794	31771	plus	2006-12-31	EG	55
+fib	FJ603103.2	1	978	plus	2004-12-31	SG	55
+fib	MK123981.1	30716	31693	plus	2012-12-31	CN	55
+fib	MK123980.1	30716	31693	plus	2012-12-31	CN	55
+fib	JX034753.1	1	978	plus	2005-02-01	AR	55
+fib	KC999107.1	1	978	plus	2004-01-31	AR	55
+fib	MK123979.1	30775	31752	plus	2010-12-31	CN	55
+fib	KJ883522.1	30775	31752	plus	2011-12-04	CN	55
+fib	KC999108.1	1	978	plus	2005-03-31	AR	55
+fib	MN654387.1	30794	31771	plus	2008-12-31	EG	55
+fib	JX423384.1	30782	31759	plus	2004-12-31	AR	55
+fib	JX423385.1	30794	31771	plus	2001-04-30	EG	55
+fib	MT513753.1	30799	31776	plus	2005-12-31	US	55
+fib	MN654391.1	30793	31770	plus	2004-12-31	EG	55
+fib	KC999109.1	1	978	plus	2005-03-31	AR	55
+fib	KY002685.1	30775	31752	plus	2016-06-07	CN	55
+fib	FJ841908.1	1	978	plus	1968-12-31	ES	55
+fib	JX034754.1	1	978	plus	2005-10-01	AR	55
+fib	MN654384.1	30793	31770	plus	2007-12-31	EG	55
+fib	MN654389.1	30794	31771	plus	2004-12-31	SG	55
+fib	MN654380.1	30792	31769	plus	1999-12-31	EG	55
+fib	KC999106.1	1	978	plus	2000-10-31	AR	55
+fib	JX123027.1	30783	31760	plus	2010-08-17	CN	55
+fib	FJ603105.2	1	978	plus	2004-12-31	SG	55
+fib	MN654390.1	30793	31770	plus	2004-12-31	EG	55
+fib	KY511632.1	77	1054	plus	?	CN	55
+fib	MN654381.1	30793	31770	plus	1999-12-31	EG	55
+fib	MN654385.1	30793	31770	plus	1999-12-31	EG	55
+fib	MN654394.1	30781	31758	plus	1975-12-31	US	55
+fib	MN654388.1	30794	31771	plus	2004-12-31	SG	55
+fib	MN654395.1	30800	31777	plus	1968-12-31	ES	55
+fib	MN654383.1	30793	31770	plus	1999-12-31	EG	55
+fib	MN654382.1	30793	31770	plus	2001-12-31	EG	55
+fib	KC999110.1	1	978	plus	2005-10-31	AR	55
+fib	KC510757.1	1	978	plus	2010-12-31	CN	55
+fib	KJ883521.1	30772	31748	plus	2013-04-06	CN	55
+fib	FJ841910.1	1	978	plus	1973-12-31	NL	14
+fib	AB065116.1	342	1319	plus	?	?	14
+fib	AY803294.1	30788	31765	plus	?	?	14
+fib	FJ841911.1	1	978	plus	?	NL	14
+fib	KP896484.1	30761	31732	plus	2013-01-14	CN	55
+fib	MH669073.1	30784	31755	plus	2009-01-01	US	14
+fib	KY021427.1	30769	31740	plus	2010-12-31	CA	14
+fib	JF420882.1	49	1020	plus	2010-10-21	CN	14
+fib	JQ824845.1	30794	31765	plus	2010-10-06	CN	14
+fib	MH669071.1	30784	31755	plus	2008-12-31	US	14
+fib	KY021432.1	30786	31757	plus	2015-05-04	US	14
+fib	JN032132.1	30789	31760	plus	2011-10-21	CN	14
+fib	MH669070.1	30789	31760	plus	2006-05-13	US	14
+fib	KY021426.1	30769	31740	plus	2010-12-31	CA	14
+fib	KY021430.1	30792	31763	plus	2015-02-14	US	14
+fib	KY021431.1	30792	31763	plus	2015-02-26	US	14
+fib	MH668281.1	30771	31742	plus	2017-08-02	US	14
+fib	MH546113.1	30771	31742	plus	2017-07-12	US	14
+fib	MH669072.1	30784	31755	plus	2008-12-31	US	14
+fib	KY021429.1	30790	31761	plus	2008-01-27	US	14
+fib	KY021428.1	30777	31748	plus	2010-12-31	CA	14
+fib	MH546114.1	30771	31742	plus	2017-07-24	US	14
+fib	JX310316.1	1	972	plus	2011-04-07	CN	14
+fib	FJ841909.1	1	972	plus	2006-12-31	US	14
+fib	MF062484.1	30793	31764	plus	2010-09-08	CN	14
+fib	JQ815084.1	1	972	plus	2010-12-31	CA	14
+fib	HQ163915.1	47	1018	plus	2009-10-31	IE	14
+fib	JQ815085.1	1	972	plus	2010-12-31	CA	14
+fib	JQ815083.1	1	972	plus	2010-12-31	CA	14
+fib	JX892927.2	30788	31759	plus	2012-01-31	CN	14
+fib	MH668280.1	30786	31757	plus	2017-07-24	US	14
+fib	FJ822614.1	30789	31760	plus	2006-12-31	US	14
+fib	MH499479.1	30103	31074	plus	2017-01-01	US	14
+hex	KY471318.1	18255	21095	plus	2016-02-22	KR	55
+hex	KY780932.1	18075	20915	plus	2016-05-31	CN	55
+hex	KY471319.1	18251	21091	plus	2016-02-22	KR	55
+hex	KY780933.1	18075	20915	plus	2016-05-31	CN	55
+hex	KY471320.1	18251	21091	plus	2016-02-22	KR	55
+hex	KJ883521.1	18231	21071	plus	2013-04-06	CN	55
+hex	MK123979.1	18233	21073	plus	2010-12-31	CN	55
+hex	KJ883522.1	18233	21073	plus	2011-12-04	CN	55
+hex	MK123980.1	18173	21013	plus	2012-12-31	CN	55
+hex	MT806173.1	18178	21018	plus	2019-04-30	CN	55
+hex	MK123981.1	18173	21013	plus	2012-12-31	CN	55
+hex	KC857701.1	18234	21074	plus	2012-04-25	CN	55
+hex	FJ643676.1	18233	21073	plus	2006-03-31	CN	55
+hex	MH256653.1	18048	20888	plus	2018-02-11	CN	55
+hex	MT513753.1	18254	21094	plus	2005-12-31	US	55
+hex	MH256654.1	18048	20888	plus	2018-02-11	CN	55
+hex	MN654375.1	18252	21092	plus	2008-12-31	KR	55
+hex	MH256655.1	18047	20887	plus	2018-02-12	CN	55
+hex	MN654376.1	18252	21092	plus	2008-12-31	KR	55
+hex	MH256656.1	18047	20887	plus	2018-02-12	CN	55
+hex	MN654377.1	18252	21092	plus	2008-12-31	KR	55
+hex	KY471322.1	18255	21095	plus	2016-02-22	KR	55
+hex	MN654378.1	18252	21092	plus	2008-12-31	KR	55
+hex	KY471323.1	18251	21091	plus	2016-02-22	KR	55
+hex	MN654379.1	18252	21092	plus	2008-12-31	KR	55
+hex	MK123978.1	18174	21014	plus	2018-05-31	CN	55
+hex	MT806171.1	18178	21018	plus	2019-04-30	CN	55
+hex	JX423384.1	18240	21080	plus	2004-12-31	AR	55
+hex	MT806172.1	18178	21018	plus	2019-04-30	CN	55
+hex	KP896483.1	18233	21073	plus	2013-02-24	CN	55
+hex	KJ883520.1	18232	21072	plus	2013-04-05	CN	55
+hex	KF911353.1	1	2841	plus	2010-12-31	CN	55
+hex	MT806174.1	18178	21018	plus	2019-04-30	CN	55
+hex	JX034752.1	1	2841	plus	2005-02-01	AR	55
+hex	MT806175.1	18178	21018	plus	2019-04-30	CN	55
+hex	JX034755.1	1	2841	plus	2005-10-01	AR	55
+hex	KC999102.1	1	2841	plus	2004-01-31	AR	55
+hex	MH256657.1	18049	20889	plus	2018-03-02	CN	55
+hex	KY002683.1	18232	21072	plus	2016-01-25	CN	55
+hex	KF908851.1	18028	20868	plus	2013-01-13	CN	55
+hex	KC999104.1	1	2841	plus	2005-03-31	AR	55
+hex	KC999101.1	1	2841	plus	1999-12-31	AR	55
+hex	KY780931.1	18075	20915	plus	2016-05-31	CN	55
+hex	MN654393.1	18256	21096	plus	2011-12-31	JP	55
+hex	MT806170.1	18178	21018	plus	2019-04-30	CN	55
+hex	KC999103.1	1	2841	plus	2005-03-31	AR	55
+hex	DQ874353.2	1	2841	plus	2006-10-01	CN	55
+hex	KY002684.1	18232	21072	plus	2016-05-23	CN	55
+hex	MK883606.1	18233	21073	plus	2012-02-27	CN	55
+hex	KC999105.1	1	2841	plus	2005-10-31	AR	55
+hex	JX123029.1	18234	21074	plus	2012-01-07	CN	55
+hex	JX123028.1	18236	21076	plus	2011-04-21	CN	55
+hex	KC999882.1	100	2940	plus	2011-12-11	CN	55
+hex	KP279748.1	18233	21073	plus	2012-04-17	CN	55
+hex	KP896478.1	18234	21074	plus	2012-02-10	CN	55
+hex	KY070248.1	18234	21074	plus	2016-06-29	CN	55
+hex	JX123027.1	18242	21082	plus	2010-08-17	CN	55
+hex	MN052861.1	18199	21039	plus	2018-04-25	CN	55
+hex	KX289874.1	18233	21073	plus	2015-11-11	CN	55
+hex	KX494979.1	18255	21095	plus	2016-02-22	KR	55
+hex	KY471321.1	18251	21091	plus	2016-02-22	KR	55
+hex	MK886831.1	18252	21092	plus	2015-08-30	CN	55
+hex	MN654390.1	18253	21093	plus	2004-12-31	EG	55
+hex	MN654386.1	18254	21094	plus	2006-12-31	EG	55
+hex	FJ841904.1	1	2841	plus	2004-12-31	SG	55
+hex	KC551973.1	1	2841	plus	2012-05-30	CN	55
+hex	MN654391.1	18253	21093	plus	2004-12-31	EG	55
+hex	MN654387.1	18254	21094	plus	2008-12-31	EG	55
+hex	MN654389.1	18254	21094	plus	2004-12-31	SG	55
+hex	FJ841906.1	1	2841	plus	2000-12-31	TW	55
+hex	MN654385.1	18253	21093	plus	1999-12-31	EG	55
+hex	JX128105.1	314	3154	plus	2009-01-31	CN	55
+hex	FJ841905.1	1	2841	plus	2001-12-31	TW	55
+hex	FJ841899.1	1	2841	plus	1996-12-31	US	55
+hex	MN654380.1	18252	21092	plus	1999-12-31	EG	55
+hex	MN654381.1	18253	21093	plus	1999-12-31	EG	55
+hex	MN654384.1	18253	21093	plus	2007-12-31	EG	55
+hex	MN654392.1	18251	21091	plus	1996-12-31	US	55
+hex	KM458628.1	1	2841	plus	2012-12-31	CN	55
+hex	MN654388.1	18254	21094	plus	2004-12-31	SG	55
+hex	KR912178.1	1	2841	plus	2013-12-31	CN	55
+hex	JX491639.1	18251	21091	plus	2011-03-23	CN	55
+hex	FJ597732.1	18255	21095	plus	2005-05-25	SG	55
+hex	MN654382.1	18253	21093	plus	2001-12-31	EG	55
+hex	JX423385.1	18254	21094	plus	2001-04-30	EG	55
+hex	KY002685.1	18233	21073	plus	2016-06-07	CN	55
+hex	MN654383.1	18253	21093	plus	1999-12-31	EG	55
+hex	MN654394.1	18250	21090	plus	1975-12-31	US	55
+hex	MN654395.1	18260	21100	plus	1968-12-31	ES	55
+hex	KP896484.1	18224	21063	plus	2013-01-14	CN	55
+hex	FJ841900.1	1	2847	plus	1968-12-31	ES	55
+hex	AY163756.1	18254	21100	plus	?	?	11
+hex	KF268121.1	18246	21092	plus	2005-07-31	US	11
+hex	AF532578.1	18255	21101	plus	?	?	11
+hex	EF011630.1	18256	21102	plus	?	US	?
+hex	AY598970.1	18254	21100	plus	?	?	11
+hex	AB330092.1	1	2847	plus	?	?	11
+hex	NC_011202.1	18254	21100	plus	?	?	11
+hex	JX034750.1	1	2856	plus	2000-09-01	AR	78
+hex	KT970442.1	18243	21098	plus	2012-04-14	US	78
+hex	KT970441.1	18252	21107	plus	2013-09-30	US	78
+hex	KT970440.1	18251	21106	plus	2000-08-31	AR	78
+hex	AB052912.2	152	3010	plus	1999-01-01	JP	35
+hex	AY271307.1	18257	21115	plus	?	?	35
+hex	AC_000019.1	18257	21115	plus	?	?	35
+hex	KF268124.1	18245	21103	plus	2004-11-30	US	35
+hex	AY128640.2	18255	21113	plus	?	?	35
+hex	AB330116.1	1	2859	plus	?	?	35
+pen	MT513753.1	13702	15375	plus	2005-12-31	US	55
+pen	MN654395.1	13709	15382	plus	1968-12-31	ES	55
+pen	MN654393.1	13703	15376	plus	2011-12-31	JP	55
+pen	KX494979.1	13703	15376	plus	2016-02-22	KR	55
+pen	KY471322.1	13703	15376	plus	2016-02-22	KR	55
+pen	KY471318.1	13703	15376	plus	2016-02-22	KR	55
+pen	MK886831.1	13702	15375	plus	2015-08-30	CN	55
+pen	KY471319.1	13701	15374	plus	2016-02-22	KR	55
+pen	FJ597732.1	13703	15376	plus	2005-05-25	SG	55
+pen	KY471323.1	13701	15374	plus	2016-02-22	KR	55
+pen	KY471320.1	13701	15374	plus	2016-02-22	KR	55
+pen	JX491639.1	13701	15374	plus	2011-03-23	CN	55
+pen	KY471321.1	13701	15374	plus	2016-02-22	KR	55
+pen	MN654386.1	13702	15375	plus	2006-12-31	EG	55
+pen	MN654388.1	13702	15375	plus	2004-12-31	SG	55
+pen	JX423385.1	13702	15375	plus	2001-04-30	EG	55
+pen	MN654389.1	13702	15375	plus	2004-12-31	SG	55
+pen	MN654387.1	13702	15375	plus	2008-12-31	EG	55
+pen	MN654385.1	13701	15374	plus	1999-12-31	EG	55
+pen	MN654390.1	13701	15374	plus	2004-12-31	EG	55
+pen	MN654382.1	13701	15374	plus	2001-12-31	EG	55
+pen	MN654383.1	13701	15374	plus	1999-12-31	EG	55
+pen	MN654381.1	13701	15374	plus	1999-12-31	EG	55
+pen	MN654384.1	13701	15374	plus	2007-12-31	EG	55
+pen	MN654391.1	13701	15374	plus	2004-12-31	EG	55
+pen	MN654376.1	13701	15374	plus	2008-12-31	KR	55
+pen	MN654379.1	13701	15374	plus	2008-12-31	KR	55
+pen	MN654377.1	13701	15374	plus	2008-12-31	KR	55
+pen	MN654380.1	13700	15373	plus	1999-12-31	EG	55
+pen	MN654375.1	13701	15374	plus	2008-12-31	KR	55
+pen	MN654378.1	13701	15374	plus	2008-12-31	KR	55
+pen	JX423384.1	13688	15361	plus	2004-12-31	AR	55
+pen	JX123027.1	13689	15362	plus	2010-08-17	CN	55
+pen	MN654392.1	13700	15373	plus	1996-12-31	US	55
+pen	JX123028.1	13686	15359	plus	2011-04-21	CN	55
+pen	MK123979.1	13681	15354	plus	2010-12-31	CN	55
+pen	KJ883522.1	13682	15355	plus	2011-12-04	CN	55
+pen	KX289874.1	13682	15355	plus	2015-11-11	CN	55
+pen	KP896478.1	13683	15356	plus	2012-02-10	CN	55
+pen	KY002683.1	13682	15355	plus	2016-01-25	CN	55
+pen	FJ643676.1	13682	15355	plus	2006-03-31	CN	55
+pen	JX123029.1	13682	15355	plus	2012-01-07	CN	55
+pen	KY002685.1	13682	15355	plus	2016-06-07	CN	55
+pen	MK123980.1	13621	15294	plus	2012-12-31	CN	55
+pen	MK123981.1	13621	15294	plus	2012-12-31	CN	55
+pen	MT806174.1	13626	15299	plus	2019-04-30	CN	55
+pen	MT806175.1	13626	15299	plus	2019-04-30	CN	55
+pen	MT806170.1	13626	15299	plus	2019-04-30	CN	55
+pen	MT806172.1	13626	15299	plus	2019-04-30	CN	55
+pen	MT806173.1	13626	15299	plus	2019-04-30	CN	55
+pen	MT806171.1	13626	15299	plus	2019-04-30	CN	55
+pen	MH256653.1	13496	15169	plus	2018-02-11	CN	55
+pen	MH256655.1	13495	15168	plus	2018-02-12	CN	55
+pen	MH256657.1	13497	15170	plus	2018-03-02	CN	55
+pen	MH256654.1	13496	15169	plus	2018-02-11	CN	55
+pen	MH256656.1	13495	15168	plus	2018-02-12	CN	55
+pen	MN654394.1	13700	15373	plus	1975-12-31	US	55
+pen	KP279748.1	13683	15356	plus	2012-04-17	CN	55
+pen	KY070248.1	13683	15356	plus	2016-06-29	CN	55
+pen	MK883606.1	13683	15356	plus	2012-02-27	CN	55
+pen	KY002684.1	13682	15355	plus	2016-05-23	CN	55
+pen	KC857701.1	13684	15357	plus	2012-04-25	CN	55
+pen	MN052861.1	13649	15322	plus	2018-04-25	CN	55
+pen	MK123978.1	13622	15295	plus	2018-05-31	CN	55
+pen	KY780931.1	13524	15197	plus	2016-05-31	CN	55
+pen	KY780932.1	13524	15197	plus	2016-05-31	CN	55
+pen	KY780933.1	13524	15197	plus	2016-05-31	CN	55
+pen	KF908851.1	13476	15149	plus	2013-01-13	CN	55
+pen	KP896483.1	13682	15354	plus	2013-02-24	CN	55
+pen	KJ883520.1	13681	15353	plus	2013-04-05	CN	55
+pen	KJ883521.1	13680	15352	plus	2013-04-06	CN	55
+pen	KP896484.1	13672	15348	plus	2013-01-14	CN	55
+pen	KP896482.1	13678	15351	plus	2013-01-22	CN	14
+pen	KP270912.1	1	1674	plus	2012-12-31	CN	55
+pen	KT253552.1	1	1674	plus	2013-12-31	CN	55
+pen	JQ824845.1	13705	15381	plus	2010-10-06	CN	14
+pen	MF062484.1	13704	15380	plus	2010-09-08	CN	14
+pen	AY803294.1	13698	15374	plus	?	?	14
+pen	KY021429.1	13700	15376	plus	2008-01-27	US	14
+pen	FJ822614.1	13699	15375	plus	2006-12-31	US	14
+pen	JN032132.1	13701	15377	plus	2011-10-21	CN	14
+pen	JX892927.2	13699	15375	plus	2012-01-31	CN	14
+pen	KY021431.1	13702	15378	plus	2015-02-26	US	14
+pen	KY021430.1	13702	15378	plus	2015-02-14	US	14
+pen	MH669070.1	13701	15377	plus	2006-05-13	US	14
+pen	MH668280.1	13696	15372	plus	2017-07-24	US	14
+pen	KY021432.1	13696	15372	plus	2015-05-04	US	14
+pen	MH669072.1	13694	15370	plus	2008-12-31	US	14
+pen	MH669071.1	13694	15370	plus	2008-12-31	US	14
+pen	MH669073.1	13694	15370	plus	2009-01-01	US	14
+pen	KY021428.1	13687	15363	plus	2010-12-31	CA	14
+pen	KY021427.1	13679	15355	plus	2010-12-31	CA	14
+pen	MH546113.1	13681	15357	plus	2017-07-12	US	14
+pen	MH668281.1	13681	15357	plus	2017-08-02	US	14
+pen	MH546114.1	13681	15357	plus	2017-07-24	US	14
+pen	KY021426.1	13679	15355	plus	2010-12-31	CA	14
+pen	MH499479.1	13013	14689	plus	2017-01-01	US	14
+pen	AC_000019.1	13690	15375	plus	?	?	35
+pen	AY128640.2	13690	15375	plus	?	?	35
+pen	AY271307.1	13690	15375	plus	?	?	35
+pen	KF268124.1	13680	15365	plus	2004-11-30	US	35
+pen	AY163756.1	13682	15367	plus	?	?	11
+pen	AF532578.1	13683	15368	plus	?	?	11
+pen	NC_011202.1	13682	15367	plus	?	?	11
+pen	AY598970.1	13682	15367	plus	?	?	11
+pen	EF011630.1	13684	15369	plus	?	US	?
+pen	KF268121.1	13678	15363	plus	2005-07-31	US	11
+pen	KT970440.1	13684	15369	plus	2000-08-31	AR	78
+pen	KT970441.1	13685	15370	plus	2013-09-30	US	78
+pen	KT970442.1	13681	15366	plus	2012-04-14	US	78
+pen	KF268328.1	13604	15289	plus	1985-01-28	DE	77
+pen	KF906413.1	13678	15363	plus	2010-08-23	KR	79
+pen	LC177352.1	13678	15363	plus	2015-01-07	JP	79
+pol	MN654384.1	5092	8460	minus	2007-12-31	EG	55
+pol	KY780932.1	4914	8282	minus	2016-05-31	CN	55
+pol	MN654385.1	5092	8460	minus	1999-12-31	EG	55
+pol	JX123027.1	5079	8447	minus	2010-08-17	CN	55
+pol	MK123981.1	5013	8381	minus	2012-12-31	CN	55
+pol	JX123028.1	5073	8441	minus	2011-04-21	CN	55
+pol	MK883606.1	5073	8441	minus	2012-02-27	CN	55
+pol	MK123979.1	5073	8441	minus	2010-12-31	CN	55
+pol	KJ883522.1	5073	8441	minus	2011-12-04	CN	55
+pol	MK123980.1	5013	8381	minus	2012-12-31	CN	55
+pol	JX423384.1	5079	8447	minus	2004-12-31	AR	55
+pol	KP896483.1	5073	8441	minus	2013-02-24	CN	55
+pol	KF908851.1	4866	8234	minus	2013-01-13	CN	55
+pol	KY780931.1	4914	8282	minus	2016-05-31	CN	55
+pol	FJ643676.1	5073	8441	minus	2006-03-31	CN	55
+pol	KC857701.1	5073	8441	minus	2012-04-25	CN	55
+pol	MN654390.1	5092	8460	minus	2004-12-31	EG	55
+pol	KY780933.1	4914	8282	minus	2016-05-31	CN	55
+pol	KY070248.1	5073	8441	minus	2016-06-29	CN	55
+pol	MT513753.1	5093	8461	minus	2005-12-31	US	55
+pol	KP896478.1	5073	8441	minus	2012-02-10	CN	55
+pol	KY002684.1	5073	8441	minus	2016-05-23	CN	55
+pol	KY471322.1	5091	8459	minus	2016-02-22	KR	55
+pol	KY002683.1	5073	8441	minus	2016-01-25	CN	55
+pol	KY471321.1	5092	8460	minus	2016-02-22	KR	55
+pol	MT806175.1	5015	8383	minus	2019-04-30	CN	55
+pol	JX491639.1	5092	8460	minus	2011-03-23	CN	55
+pol	MN654387.1	5092	8460	minus	2008-12-31	EG	55
+pol	MN654377.1	5092	8460	minus	2008-12-31	KR	55
+pol	MN654383.1	5092	8460	minus	1999-12-31	EG	55
+pol	MT806170.1	5015	8383	minus	2019-04-30	CN	55
+pol	KY471319.1	5092	8460	minus	2016-02-22	KR	55
+pol	MN654388.1	5092	8460	minus	2004-12-31	SG	55
+pol	MT806174.1	5015	8383	minus	2019-04-30	CN	55
+pol	JX123029.1	5073	8441	minus	2012-01-07	CN	55
+pol	KY471318.1	5091	8459	minus	2016-02-22	KR	55
+pol	MN654381.1	5092	8460	minus	1999-12-31	EG	55
+pol	MT806173.1	5015	8383	minus	2019-04-30	CN	55
+pol	MN654389.1	5092	8460	minus	2004-12-31	SG	55
+pol	MT806172.1	5015	8383	minus	2019-04-30	CN	55
+pol	JX423385.1	5093	8461	minus	2001-04-30	EG	55
+pol	MT806171.1	5015	8383	minus	2019-04-30	CN	55
+pol	MH256657.1	4884	8252	minus	2018-03-02	CN	55
+pol	MH256653.1	4884	8252	minus	2018-02-11	CN	55
+pol	FJ597732.1	5093	8461	minus	2005-05-25	SG	55
+pol	KP279748.1	5073	8441	minus	2012-04-17	CN	55
+pol	MN654386.1	5092	8460	minus	2006-12-31	EG	55
+pol	KX289874.1	5073	8441	minus	2015-11-11	CN	55
+pol	MN654376.1	5092	8460	minus	2008-12-31	KR	55
+pol	MN654392.1	5091	8459	minus	1996-12-31	US	55
+pol	MH256655.1	4884	8252	minus	2018-02-12	CN	55
+pol	MH256654.1	4884	8252	minus	2018-02-11	CN	55
+pol	MK886831.1	5092	8460	minus	2015-08-30	CN	55
+pol	MN654375.1	5092	8460	minus	2008-12-31	KR	55
+pol	MN654380.1	5091	8459	minus	1999-12-31	EG	55
+pol	MN052861.1	5039	8407	minus	2018-04-25	CN	55
+pol	MN654382.1	5092	8460	minus	2001-12-31	EG	55
+pol	MN654391.1	5092	8460	minus	2004-12-31	EG	55
+pol	MN654379.1	5092	8460	minus	2008-12-31	KR	55
+pol	MH256656.1	4884	8252	minus	2018-02-12	CN	55
+pol	KX494979.1	5091	8459	minus	2016-02-22	KR	55
+pol	MN654378.1	5092	8460	minus	2008-12-31	KR	55
+pol	MK123978.1	5013	8381	minus	2018-05-31	CN	55
+pol	KY471323.1	5092	8460	minus	2016-02-22	KR	55
+pol	MN654393.1	5093	8461	minus	2011-12-31	JP	55
+pol	KY471320.1	5092	8460	minus	2016-02-22	KR	55
+pol	KY002685.1	5073	8441	minus	2016-06-07	CN	55
+pol	KJ883521.1	5073	8440	minus	2013-04-06	CN	55
+pol	KJ883520.1	5073	8440	minus	2013-04-05	CN	55
+pol	MN654394.1	5090	8458	minus	1975-12-31	US	55
+pol	MN654395.1	5095	8463	minus	1968-12-31	ES	55
+pol	KP896484.1	5071	8437	minus	2013-01-14	CN	55
+pol	KY021427.1	5068	8436	minus	2010-12-31	CA	14
+pol	FJ822614.1	5088	8456	minus	2006-12-31	US	14
+pol	JX892927.2	5088	8456	minus	2012-01-31	CN	14
+pol	MH546113.1	5068	8436	minus	2017-07-12	US	14
+pol	KY021432.1	5084	8452	minus	2015-05-04	US	14
+pol	KY021430.1	5090	8458	minus	2015-02-14	US	14
+pol	MH668280.1	5083	8451	minus	2017-07-24	US	14
+pol	MH546114.1	5068	8436	minus	2017-07-24	US	14
+pol	KY021426.1	5068	8436	minus	2010-12-31	CA	14
+pol	KY021429.1	5089	8457	minus	2008-01-27	US	14
+pol	KY021431.1	5090	8458	minus	2015-02-26	US	14
+pol	MH499479.1	4400	7768	minus	2017-01-01	US	14
+pol	MH669073.1	5082	8450	minus	2009-01-01	US	14
+pol	MH668281.1	5068	8436	minus	2017-08-02	US	14
+pol	KY021428.1	5076	8444	minus	2010-12-31	CA	14
+pol	MH669071.1	5082	8450	minus	2008-12-31	US	14
+pol	JQ824845.1	5087	8455	minus	2010-10-06	CN	14
+pol	MH669070.1	5088	8456	minus	2006-05-13	US	14
+pol	MH669072.1	5082	8450	minus	2008-12-31	US	14
+pol	MF062484.1	5087	8455	minus	2010-09-08	CN	14
+pol	AY803294.1	5088	8456	minus	?	?	14
+pol	JN032132.1	5087	8455	minus	2011-10-21	CN	14
+pol	KP896482.1	5081	8445	minus	2013-01-22	CN	14
+pol	LC177352.1	5068	8436	minus	2015-01-07	JP	79
+pol	KF906413.1	5068	8436	minus	2010-08-23	KR	79
+pol	KF268196.1	5067	8435	minus	2005-09-30	US	34
+pol	AY737797.1	5069	8437	minus	?	?	34
+pol	KT970441.1	5067	8435	minus	2013-09-30	US	78
+pol	KT970442.1	5065	8433	minus	2012-04-14	US	78
+pol	NC_011202.1	5067	8435	minus	?	?	11
+pol	AF532578.1	5067	8435	minus	?	?	11
+pol	AY598970.1	5067	8435	minus	?	?	11
+pol	AY163756.1	5067	8435	minus	?	?	11
+pol	KF268328.1	4990	8358	minus	1985-01-28	DE	77
+pol	MH301269.1	161	3529	minus	?	FR	11
+pol	KT970440.1	5069	8437	minus	2000-08-31	AR	78
+pol	MH301268.1	161	3529	minus	?	FR	11
+pol	AC_000019.1	5069	8437	minus	?	?	35
+pol	AY128640.2	5069	8437	minus	?	?	35
+pol	AY271307.1	5069	8437	minus	?	?	35
+pol	KF268121.1	5072	8440	minus	2005-07-31	US	11
+pol	KF268124.1	5062	8430	minus	2004-11-30	US	35
+pol	MH301270.1	167	3535	minus	?	FR	11
+pol	EF564601.1	5068	8436	minus	?	?	?
+pol	EF564600.1	5068	8436	minus	?	US	?
+pol	EF011630.1	5068	8436	minus	?	US	?
+gen	FJ643676.1	1	34755	plus	2006-03-31	CN	55
+gen	KX289874.1	1	34755	plus	2015-11-11	CN	55
+gen	KJ883522.1	1	34755	plus	2011-12-04	CN	55
+gen	JX123029.1	1	34753	plus	2012-01-07	CN	55
+gen	KP896478.1	1	34755	plus	2012-02-10	CN	55
+gen	MK123979.1	1	34755	plus	2010-12-31	CN	55
+gen	KY070248.1	1	34755	plus	2016-06-29	CN	55
+gen	KJ883520.1	1	34751	plus	2013-04-05	CN	55
+gen	KP279748.1	1	34755	plus	2012-04-17	CN	55
+gen	KY002685.1	1	34743	plus	2016-06-07	CN	55
+gen	KP896483.1	1	34752	plus	2013-02-24	CN	55
+gen	KY002683.1	1	34755	plus	2016-01-25	CN	55
+gen	JX123028.1	1	34762	plus	2011-04-21	CN	55
+gen	JX423384.1	1	34763	plus	2004-12-31	AR	55
+gen	KC857701.1	1	34744	plus	2012-04-25	CN	55
+gen	MK883606.1	1	34753	plus	2012-02-27	CN	55
+gen	KY002684.1	1	34745	plus	2016-05-23	CN	55
+gen	KY471321.1	1	34773	plus	2016-02-22	KR	55
+gen	KY471323.1	1	34773	plus	2016-02-22	KR	55
+gen	KY471319.1	1	34773	plus	2016-02-22	KR	55
+gen	MK886831.1	1	34774	plus	2015-08-30	CN	55
+gen	KY471320.1	1	34773	plus	2016-02-22	KR	55
+gen	MN654393.1	1	34778	plus	2011-12-31	JP	55
+gen	JX123027.1	1	34762	plus	2010-08-17	CN	55
+gen	KY471318.1	1	34776	plus	2016-02-22	KR	55
+gen	KX494979.1	1	34776	plus	2016-02-22	KR	55
+gen	MN654378.1	1	34770	plus	2008-12-31	KR	55
+gen	MN654377.1	1	34770	plus	2008-12-31	KR	55
+gen	MN654376.1	1	34770	plus	2008-12-31	KR	55
+gen	MN654379.1	1	34770	plus	2008-12-31	KR	55
+gen	MN654375.1	1	34770	plus	2008-12-31	KR	55
+gen	KJ883521.1	1	34750	plus	2013-04-06	CN	55
+gen	KY471322.1	1	34776	plus	2016-02-22	KR	55
+gen	MT513753.1	1	34781	plus	2005-12-31	US	55
+gen	JX491639.1	1	34773	plus	2011-03-23	CN	55
+gen	MN654390.1	1	34771	plus	2004-12-31	EG	55
+gen	MN654391.1	1	34771	plus	2004-12-31	EG	55
+gen	MN654385.1	1	34771	plus	1999-12-31	EG	55
+gen	MN654384.1	1	34771	plus	2007-12-31	EG	55
+gen	MN654387.1	1	34772	plus	2008-12-31	EG	55
+gen	MN654389.1	1	34772	plus	2004-12-31	SG	55
+gen	MN654386.1	1	34772	plus	2006-12-31	EG	55
+gen	MN654388.1	1	34772	plus	2004-12-31	SG	55
+gen	FJ597732.1	1	34773	plus	2005-05-25	SG	55
+gen	MN654383.1	1	34771	plus	1999-12-31	EG	55
+gen	MK123978.1	1	34664	plus	2018-05-31	CN	55
+gen	JX423385.1	1	34772	plus	2001-04-30	EG	55
+gen	MN654380.1	1	34770	plus	1999-12-31	EG	55
+gen	MN654382.1	1	34771	plus	2001-12-31	EG	55
+gen	MN654381.1	1	34771	plus	1999-12-31	EG	55
+gen	MK123980.1	1	34667	plus	2012-12-31	CN	55
+gen	MK123981.1	1	34667	plus	2012-12-31	CN	55
+gen	MN654392.1	1	34762	plus	1996-12-31	US	55
+gen	MN052861.1	7	34719	plus	2018-04-25	CN	55
+gen	KP896484.1	1	34730	plus	2013-01-14	CN	55
+gen	MT806175.1	1	34641	plus	2019-04-30	CN	55
+gen	MT806172.1	1	34640	plus	2019-04-30	CN	55
+gen	MT806170.1	1	34640	plus	2019-04-30	CN	55
+gen	MT806173.1	1	34640	plus	2019-04-30	CN	55
+gen	MT806174.1	3	34641	plus	2019-04-30	CN	55
+gen	MT806171.1	1	34620	plus	2019-04-30	CN	55
+gen	MN654395.1	1	34779	plus	1968-12-31	ES	55
+gen	MN654394.1	1	34759	plus	1975-12-31	US	55
+gen	MH256655.1	1	34396	plus	2018-02-12	CN	55
+gen	MH256657.1	1	34394	plus	2018-03-02	CN	55
+gen	MH256654.1	1	34394	plus	2018-02-11	CN	55
+gen	MH256653.1	1	34393	plus	2018-02-11	CN	55
+gen	MH256656.1	1	34392	plus	2018-02-12	CN	55
+gen	KY780932.1	1	34279	plus	2016-05-31	CN	55
+gen	KY780933.1	1	34279	plus	2016-05-31	CN	55
+gen	KY780931.1	1	34279	plus	2016-05-31	CN	55
+gen	KF908851.1	1	34236	plus	2013-01-13	CN	55
+gen	AY803294.1	1	34764	plus	?	?	14
+gen	JX892927.2	1	34760	plus	2012-01-31	CN	14
+gen	KY021429.1	1	34764	plus	2008-01-27	US	14
+gen	FJ822614.1	1	34763	plus	2006-12-31	US	14
+gen	MH669070.1	1	34756	plus	2006-05-13	US	14
+gen	JN032132.1	1	34762	plus	2011-10-21	CN	14
+gen	MH669073.1	1	34752	plus	2009-01-01	US	14
+gen	MH669071.1	1	34752	plus	2008-12-31	US	14
+gen	KY021431.1	1	34758	plus	2015-02-26	US	14
+gen	KY021430.1	1	34758	plus	2015-02-14	US	14
+gen	MH668280.1	1	34754	plus	2017-07-24	US	14
+gen	MH669072.1	1	34752	plus	2008-12-31	US	14
+gen	KY021432.1	1	34754	plus	2015-05-04	US	14
+gen	MF062484.1	1	34766	plus	2010-09-08	CN	14
+gen	JQ824845.1	1	34767	plus	2010-10-06	CN	14
+gen	KY021428.1	1	34743	plus	2010-12-31	CA	14
+gen	KY021427.1	1	34726	plus	2010-12-31	CA	14
+gen	KY021426.1	1	34722	plus	2010-12-31	CA	14
+gen	MH546114.1	1	34724	plus	2017-07-24	US	14
+gen	MH546113.1	1	34724	plus	2017-07-12	US	14
+gen	MH668281.1	1	34724	plus	2017-08-02	US	14
+gen	KP896482.1	1	34731	plus	2013-01-22	CN	14
+gen	KF268121.1	1	34782	plus	2005-07-31	US	11
+gen	AY598970.1	1	34794	plus	?	?	11
+gen	AY163756.1	1	34794	plus	?	?	11
+gen	NC_011202.1	1	34794	plus	?	?	11
+gen	AF532578.1	1	34794	plus	?	?	11
+gen	MH499479.1	1	33679	plus	2017-01-01	US	14
+gen	KT970441.1	1	34798	plus	2013-09-30	US	78
+gen	KT970442.1	1	34787	plus	2012-04-14	US	78
+gen	KT970440.1	1	34795	plus	2000-08-31	AR	78
+gen	LC177352.1	1	34779	plus	2015-01-07	JP	79
+gen	KF906413.1	1	34780	plus	2010-08-23	KR	79
+gen	KF268328.1	1	34653	plus	1985-01-28	DE	77
+gen	KF268124.1	1	34781	plus	2004-11-30	US	35
+gen	AY271307.1	1	34794	plus	?	?	35
+gen	AC_000019.1	1	34794	plus	?	?	35
+gen	AY128640.2	1	34794	plus	?	?	35
+gen	AY737797.1	1	34775	plus	?	?	34
+gen	KF268196.1	1	34758	plus	2005-09-30	US	34
